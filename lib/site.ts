@@ -1,18 +1,19 @@
 export const siteConfig = {
-  name: "Changelog Template",
-  url: "https://changelog-magicui.vercel.app",
-  description: "A minimal changelog template built using Next.js.",
+  name: "Workbook Changelog",
+  url: "https://workbook.so",
+  description: "Product updates, enhancements, and changelog for Workbook ERP.",
   links: {
-    twitter: "https://x.com/magicuidesign",
-    github: "https://github.com/magicuidesign",
+    website: "https://workbook.so",
+    parentCompany: "https://everythingtech.xyz",
+    signIn: "https://app.workbook.so/auth/sign-in",
+    contactSales: "https://forms.workbook.so/f/27G9XVEG5X",
   },
   keywords: [
+    "Workbook",
+    "Workbook ERP",
     "Changelog",
-    "Next.js",
-    "Fumadocs",
-    "Tailwind CSS",
-    "shadcn",
-    "Magic UI",
+    "Updates",
+    "Product Releases",
   ],
 }
 
