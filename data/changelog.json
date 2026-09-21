@@ -1,22 +1,31 @@
 [
   {
     "id": "rel-2026-09-21",
-    "title": "Add sales panels and refactor analytics request logic",
-    "description": "Shipped 2 updates across transactions, Sales Insights, with stability and workflow enhancements.",
+    "title": "Add insights tabs and analytics components",
+    "description": "Shipped 4 updates across transactions, purchases, Sales Insights, with stability and workflow enhancements.",
     "date": "2026-09-21",
     "tags": [
       "Features",
+      "Improvements",
       "Fixes"
     ],
     "highlights": [
+      "Add insights tabs and analytics components",
       "Add sales panels and refactor analytics request logic",
-      "Prevent editing system-generated transactions"
+      "Standardize spelling of ageing to aging across UI and docs"
     ],
     "sections": [
       {
         "heading": "✨ New Features",
         "items": [
+          "Add insights tabs and analytics components",
           "Add sales panels and refactor analytics request logic"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Standardize spelling of ageing to aging across UI and docs"
         ]
       },
       {
