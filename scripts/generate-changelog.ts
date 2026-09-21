@@ -3,8 +3,8 @@
 /**
  * Workbook Automated JSON Changelog Generator
  * 
- * Monitors the Workbook ERP repository for new commits, translates them into
- * public-friendly updates, and merges them into `data/changelog.json`.
+ * Monitors the Workbook ERP repository for commits, translates them into
+ * public-friendly updates grouped by commit date (YYYY-MM-DD), and updates `data/changelog.json`.
  */
 
 import { execSync } from "child_process";
@@ -12,13 +12,15 @@ import fs from "fs";
 import path from "path";
 
 const ERP_REPO_PATH = process.env.ERP_REPO_PATH || "/Users/kenneth/workspace/everything_tech/next js/workbook/workbook";
+// Default to full year lookback if FULL_LOOKBACK=true, or if specified by flag
+const FULL_LOOKBACK = process.env.FULL_LOOKBACK === "true";
 const HOURS_LOOKBACK = parseInt(process.env.HOURS_LOOKBACK || "5", 10);
 const DATA_FILE = path.resolve(process.cwd(), "data/changelog.json");
 
 interface CommitInfo {
   hash: string;
   author: string;
-  date: string;
+  date: string; // YYYY-MM-DD
   message: string;
 }
 
@@ -29,11 +31,6 @@ interface ChangelogEntry {
   date: string;
   version?: string;
   tags: string[];
-  media?: {
-    type: "image" | "video";
-    url: string;
-    alt?: string;
-  };
   highlights: string[];
   sections: {
     heading: string;
@@ -41,18 +38,24 @@ interface ChangelogEntry {
   }[];
 }
 
-function getRecentCommits(repoPath: string, hours: number): CommitInfo[] {
+function getCommits(repoPath: string): CommitInfo[] {
   try {
-    const sinceTime = new Date(Date.now() - hours * 60 * 60 * 1000).toISOString();
-    
     try {
       execSync("git fetch origin main --quiet", { cwd: repoPath, stdio: "ignore" });
     } catch {
       // Offline / local fallback
     }
 
+    let sinceFlag = "";
+    if (FULL_LOOKBACK) {
+      sinceFlag = `--since="2026-01-01T00:00:00Z"`;
+    } else {
+      const sinceTime = new Date(Date.now() - HOURS_LOOKBACK * 60 * 60 * 1000).toISOString();
+      sinceFlag = `--since="${sinceTime}"`;
+    }
+
     const logOutput = execSync(
-      `git log --since="${sinceTime}" --pretty=format:"%H|%an|%ad|%s" --date=iso`,
+      `git log ${sinceFlag} --pretty=format:"%H|%an|%ad|%s" --date=short`,
       { cwd: repoPath, encoding: "utf8" }
     ).trim();
 
@@ -95,22 +98,12 @@ function sanitizeMessage(msg: string): string {
   return text;
 }
 
-function run() {
-  console.log(`[Changelog Bot] Monitoring ERP repo at: ${ERP_REPO_PATH}`);
-  console.log(`[Changelog Bot] Checking commits in the last ${HOURS_LOOKBACK} hours...`);
-
-  const commits = getRecentCommits(ERP_REPO_PATH, HOURS_LOOKBACK);
-
-  if (commits.length === 0) {
-    console.log(`[Changelog Bot] No new commits found in the last ${HOURS_LOOKBACK} hours.`);
-    return;
-  }
-
+function buildEntryForDate(dateStr: string, dateCommits: CommitInfo[]): ChangelogEntry {
   const features: string[] = [];
   const improvements: string[] = [];
   const fixes: string[] = [];
 
-  for (const c of commits) {
+  for (const c of dateCommits) {
     const cleanMsg = sanitizeMessage(c.message);
     const lower = c.message.toLowerCase();
 
@@ -123,7 +116,6 @@ function run() {
     }
   }
 
-  const dateStr = new Date().toISOString().split("T")[0];
   const tags: string[] = [];
   if (features.length) tags.push("Features");
   if (improvements.length) tags.push("Improvements");
@@ -134,36 +126,79 @@ function run() {
   if (improvements.length) sections.push({ heading: "⚡ Improvements", items: improvements });
   if (fixes.length) sections.push({ heading: "🐛 Bug Fixes", items: fixes });
 
-  const newEntry: ChangelogEntry = {
+  return {
     id: `rel-${dateStr}`,
-    title: `Workbook ERP Update — ${dateStr}`,
-    description: `Latest features and system enhancements deployed on ${dateStr}.`,
+    title: `Workbook ERP Release — ${dateStr}`,
+    description: `Updates, performance enhancements, and bug fixes deployed on ${dateStr}.`,
     date: dateStr,
     tags: tags.length ? tags : ["Update"],
     highlights: [...features, ...improvements, ...fixes].slice(0, 3),
     sections,
   };
+}
 
-  let currentData: ChangelogEntry[] = [];
-  if (fs.existsSync(DATA_FILE)) {
-    try {
-      currentData = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
-    } catch {
-      currentData = [];
-    }
-  }
-
-  // Update existing date entry or prepend new entry
-  const existingIdx = currentData.findIndex((e) => e.date === dateStr);
-  if (existingIdx !== -1) {
-    currentData[existingIdx] = { ...currentData[existingIdx], ...newEntry };
+function run() {
+  console.log(`[Changelog Bot] Monitoring ERP repo at: ${ERP_REPO_PATH}`);
+  if (FULL_LOOKBACK) {
+    console.log(`[Changelog Bot] Performing FULL lookback since beginning of 2026...`);
   } else {
-    currentData.unshift(newEntry);
+    console.log(`[Changelog Bot] Checking commits in the last ${HOURS_LOOKBACK} hours...`);
   }
 
-  fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
-  fs.writeFileSync(DATA_FILE, JSON.stringify(currentData, null, 2), "utf8");
-  console.log(`[Changelog Bot] Successfully updated JSON data store at: ${DATA_FILE}`);
+  const commits = getCommits(ERP_REPO_PATH);
+
+  if (commits.length === 0) {
+    console.log(`[Changelog Bot] No commits found for the specified period.`);
+    return;
+  }
+
+  // Group commits by commit date (YYYY-MM-DD)
+  const groupedByDate: Record<string, CommitInfo[]> = {};
+  for (const c of commits) {
+    if (!groupedByDate[c.date]) {
+      groupedByDate[c.date] = [];
+    }
+    groupedByDate[c.date].push(c);
+  }
+
+  if (FULL_LOOKBACK) {
+    // Rebuild the complete history
+    const allEntries: ChangelogEntry[] = [];
+    for (const [dateStr, dateCommits] of Object.entries(groupedByDate)) {
+      allEntries.push(buildEntryForDate(dateStr, dateCommits));
+    }
+    allEntries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+    fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
+    fs.writeFileSync(DATA_FILE, JSON.stringify(allEntries, null, 2), "utf8");
+    console.log(`[Changelog Bot] Successfully generated ${allEntries.length} individual release dates in: ${DATA_FILE}`);
+  } else {
+    // Incremental merge mode: preserve existing dates in file, only update/insert the dates found in this run
+    let existingData: ChangelogEntry[] = [];
+    if (fs.existsSync(DATA_FILE)) {
+      try {
+        existingData = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
+      } catch {
+        existingData = [];
+      }
+    }
+
+    for (const [dateStr, dateCommits] of Object.entries(groupedByDate)) {
+      const entry = buildEntryForDate(dateStr, dateCommits);
+      const idx = existingData.findIndex((e) => e.date === dateStr);
+      if (idx !== -1) {
+        existingData[idx] = entry;
+      } else {
+        existingData.push(entry);
+      }
+    }
+
+    existingData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+    fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
+    fs.writeFileSync(DATA_FILE, JSON.stringify(existingData, null, 2), "utf8");
+    console.log(`[Changelog Bot] Successfully updated ${Object.keys(groupedByDate).length} date(s). Total releases now: ${existingData.length}`);
+  }
 }
 
 run();

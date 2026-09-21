@@ -1,30 +1,43 @@
 [
   {
     "id": "rel-2026-09-21",
-    "title": "Workbook ERP Update — 2026-09-21",
-    "description": "Latest features and system enhancements deployed on 2026-09-21.",
+    "title": "Workbook ERP Release — 2026-09-21",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-21.",
     "date": "2026-09-21",
-    "version": "v2.5.0",
     "tags": [
-      "Features",
-      "Improvements",
-      "Fixes"
+      "Features"
     ],
-    "media": {
-      "type": "image",
-      "url": "/assets/sales-insights.png",
-      "alt": "Sales insights panel visualization"
-    },
     "highlights": [
-      "Add sales panels and refactor analytics request logic",
-      "Refine insights and listing components across sales modules",
-      "Enhance analytics charts, trend panels, and receipt insight panels"
+      "Add sales panels and refactor analytics request logic"
     ],
     "sections": [
       {
         "heading": "✨ New Features",
         "items": [
-          "Add sales panels and refactor analytics request logic",
+          "Add sales panels and refactor analytics request logic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-18",
+    "title": "Workbook ERP Release — 2026-09-18",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-18.",
+    "date": "2026-09-18",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Refine insights and listing components across sales modules",
+      "Enhance analytics charts, trend panels, and receipt insight panels",
+      "Add segmented-track, split-comparison, stat-bar-chart, and weekday-pattern panels"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Refine insights and listing components across sales modules",
           "Enhance analytics charts, trend panels, and receipt insight panels",
           "Add segmented-track, split-comparison, stat-bar-chart, and weekday-pattern panels",
@@ -34,36 +47,332 @@
           "Update data-grid and add insights empty state component",
           "Replace status strip's bar with a donut ring",
           "Promote the ranked-list card to a global component",
-          "Pair invoice insights panels into balanced rows",
+          "Pair invoice insights panels into balanced rows"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refine typography, font-mono usage, and cards in CFO dashboard",
+          "Update font-mono guidelines in developer instructions",
+          "Revert \"feat(settings): vertical section rail + horizontal sub-tabs\"",
+          "Rebuild the insights customer panels"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Standardize sample-data badging in reliable-payers panel",
+          "Remove CashSalesInsights component due to redundancy",
+          "Update grid classes for consistent layout in loading and data states",
+          "Refine layout and insights across credit notes, invoices, and receipts",
+          "Match status-strip column count to tile count, capped at 4",
+          "Remove Register/Insights tabs from the estimates listing",
+          "Fix empty space in invoice status card, drop broken overdue chart",
+          "Restore viewport fallback for custom fields grid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-17",
+    "title": "Workbook ERP Release — 2026-09-17",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-17.",
+    "date": "2026-09-17",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add prepayment insights component and integrate with existing features",
+      "Add new skills for animation and design",
+      "Add list-toolbar and update module-section-tabs spacing"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Add prepayment insights component and integrate with existing features",
           "Add new skills for animation and design",
           "Add list-toolbar and update module-section-tabs spacing",
           "Enhance settings navigation with preloading for improved performance",
           "Implement phone and email change dialogs with hooks for managing state and flow",
           "Implement set as main branch functionality with validation and dialog",
-          "Enhance cash register functionality with opening balance management",
+          "Enhance cash register functionality with opening balance management"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Modularize sales and receipt analytics components and view options"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Resolve import inconsistencies and clean up unused imports in sales orders listing",
+          "Unify spacing and layout across sales page routes",
+          "Standardize spacing and toolbar layout across sales feature listings",
+          "Update button text color for better visibility in approval policy panel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-16",
+    "title": "Workbook ERP Release — 2026-09-16",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-16.",
+    "date": "2026-09-16",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Improve transfer funds form UX with enhanced input handling and clearer instructions",
+      "Enhance funds transfer functionality with improved exchange rate handling",
+      "Update brand color tokens across accounts, crm, cash sales, projects, and users components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Improve transfer funds form UX with enhanced input handling and clearer instructions",
-          "Enhance funds transfer functionality with improved exchange rate handling",
+          "Enhance funds transfer functionality with improved exchange rate handling"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update brand color tokens across accounts, crm, cash sales, projects, and users components",
+          "Update invite page and business router client brand styles",
+          "Align button, animated tabs, data-grid-table, and loading-overlay with brand tokens",
+          "Update sidebar layout and quick action popovers to unified brand color tokens",
+          "Update brand color CSS variables and app icon asset",
+          "Update tab colors to use unified brand color variables",
+          "Chore(design): cleanup scratch design documentation and session config",
+          "Update feature components to unified brand color",
+          "Align auth layout, business router, invite, and sign-up views with brand styles",
+          "Update sidebar, search, and quick action popovers to unified brand color",
+          "Update core UI component colors and calendar styling",
+          "Unify brand colors, tokens, and theme provider setup"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-15",
+    "title": "Workbook ERP Release — 2026-09-15",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-15.",
+    "date": "2026-09-15",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Update currency formatting and layout adjustments across components",
+      "Add transfer setup required notice component"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Update currency formatting and layout adjustments across components",
-          "Add transfer setup required notice component",
-          "Enhance object permissions management with effective permissions explainer",
+          "Add transfer setup required notice component"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-14",
+    "title": "Workbook ERP Release — 2026-09-14",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-14.",
+    "date": "2026-09-14",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance object permissions management with effective permissions explainer"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance object permissions management with effective permissions explainer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-12",
+    "title": "Workbook ERP Release — 2026-09-12",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-12.",
+    "date": "2026-09-12",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement object-level permissions management",
+      "Enhance bill and purchase order handling with draft support and tax management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Implement object-level permissions management",
-          "Enhance bill and purchase order handling with draft support and tax management",
+          "Enhance bill and purchase order handling with draft support and tax management"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-11",
+    "title": "Workbook ERP Release — 2026-09-11",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-11.",
+    "date": "2026-09-11",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance currency handling and improve popover menu behavior in forms",
+      "Implement purchase order print preview functionality",
+      "Add functions to resolve line item display names and types in credit note detail sheet"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enhance currency handling and improve popover menu behavior in forms",
           "Implement purchase order print preview functionality",
-          "Add functions to resolve line item display names and types in credit note detail sheet",
+          "Add functions to resolve line item display names and types in credit note detail sheet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-10",
+    "title": "Workbook ERP Release — 2026-09-10",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-10.",
+    "date": "2026-09-10",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance handling of entry UOM and packaging in invoices and purchase orders",
+      "Add depreciation run tracking and notifications",
+      "Add attachments functionality to sales orders"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enhance handling of entry UOM and packaging in invoices and purchase orders",
           "Add depreciation run tracking and notifications",
           "Add attachments functionality to sales orders",
-          "Enhance purchase order handling with packaging and unit price improvements",
+          "Enhance purchase order handling with packaging and unit price improvements"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor code structure for improved readability and maintainability"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-09",
+    "title": "Workbook ERP Release — 2026-09-09",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-09.",
+    "date": "2026-09-09",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance purchase order item handling with entry UOM and quantity support",
+      "Add option to display currency and account number without balances in CashBankAccountPopover",
+      "Enhance payment processing with detailed error handling and exchange rate support"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enhance purchase order item handling with entry UOM and quantity support",
           "Add option to display currency and account number without balances in CashBankAccountPopover",
           "Enhance payment processing with detailed error handling and exchange rate support",
           "Enhance quantity formatting to support four decimal places across inventory components",
-          "Implement opening balance management with voiding functionality and movement tracking",
           "Enhance payment processing with detailed error handling and exchange rate support",
-          "Enhance quantity formatting to support four decimal places across inventory components",
+          "Enhance quantity formatting to support four decimal places across inventory components"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update Makefile targets for clarity and enhance stock opening balance validation",
+          "Update handling of branch ID in upload and import actions, improve UI for row preview",
+          "Update Makefile targets for clarity and enhance stock opening balance validation",
+          "Update handling of branch ID in upload and import actions, improve UI for row preview"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-08",
+    "title": "Workbook ERP Release — 2026-09-08",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-08.",
+    "date": "2026-09-08",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement opening balance management with voiding functionality and movement tracking",
+      "Implement opening balance management with voiding functionality and movement tracking",
+      "Refactor purchasing line handling to support entry units and packaging"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Implement opening balance management with voiding functionality and movement tracking",
+          "Implement opening balance management with voiding functionality and movement tracking"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor purchasing line handling to support entry units and packaging"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update pagination handling in InventoryTableApi and useDataTable to prevent stale data rendering",
+          "Update pagination handling in InventoryTableApi and useDataTable to prevent stale data rendering"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-07",
+    "title": "Workbook ERP Release — 2026-09-07",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-07.",
+    "date": "2026-09-07",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add support for nested create sheets in BillPopover and ApplyPrepaymentDialog",
+      "Update label for inventory tracking in product variant sheet",
+      "Enhance goods receipt validation to handle non-inventory items"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Add support for nested create sheets in BillPopover and ApplyPrepaymentDialog",
           "Update label for inventory tracking in product variant sheet",
           "Enhance goods receipt validation to handle non-inventory items",
@@ -77,38 +386,372 @@
           "Implement permission-based visibility for dashboard widgets and bank accounts",
           "Implement balance masking for cash-linked accounts in various components",
           "Implement deprecation handling for permissions in the frontend",
-          "Implement balance visibility control across cash and bank components",
+          "Implement balance visibility control across cash and bank components"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Improve error handling and user feedback in Goods Receive Sheet",
+          "Optimize invoice config fetching based on sheet visibility"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-04",
+    "title": "Workbook ERP Release — 2026-09-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-04.",
+    "date": "2026-09-04",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add track_inventory flag to product variants and update related components",
+      "Enhance statement handling for customer and supplier types with dynamic labels and entry side logic",
+      "Add StatementToolbar component for filtering and exporting contact statements"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Add track_inventory flag to product variants and update related components",
           "Enhance statement handling for customer and supplier types with dynamic labels and entry side logic",
           "Add StatementToolbar component for filtering and exporting contact statements",
-          "Enhance account selection for payment methods in refund process",
+          "Enhance account selection for payment methods in refund process"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-03",
+    "title": "Workbook ERP Release — 2026-09-03",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-03.",
+    "date": "2026-09-03",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add Data Import & Export tab with dynamic import panels",
+      "Add product catalog import utilities",
+      "Add debit note management features including API integration and UI components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Add Data Import & Export tab with dynamic import panels",
           "Add product catalog import utilities",
           "Add debit note management features including API integration and UI components",
-          "Implement opening stock import utilities and websocket handling",
+          "Implement opening stock import utilities and websocket handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-02",
+    "title": "Workbook ERP Release — 2026-09-02",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-02.",
+    "date": "2026-09-02",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance permission handling during logout by adding loading state and preventing access flash",
+      "Add optional NEXT_BUILD_ID to ensure consistent Server Action IDs across replicas",
+      "Enhance error handling by adding non-API error detection and safe message fallback"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enhance permission handling during logout by adding loading state and preventing access flash",
           "Add optional NEXT_BUILD_ID to ensure consistent Server Action IDs across replicas",
           "Enhance error handling by adding non-API error detection and safe message fallback",
-          "Implement credit note status handling and add delete confirmation dialog for e-stamp configuration",
+          "Implement credit note status handling and add delete confirmation dialog for e-stamp configuration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-01",
+    "title": "Workbook ERP Release — 2026-09-01",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-09-01.",
+    "date": "2026-09-01",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add support for WEBSOCKET_URL in Docker and application code",
+      "Enhance fixed asset import process with row skipping and cancellation features",
+      "Pin system component build ID to commit SHA for consistent Server Action IDs across instances"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Add support for WEBSOCKET_URL in Docker and application code",
           "Enhance fixed asset import process with row skipping and cancellation features",
           "Pin system component build ID to commit SHA for consistent Server Action IDs across instances",
-          "Enhance account form error handling and parsing",
-          "Implement server-side duplication for delivery notes and add packaging deletion functionality",
+          "Enhance account form error handling and parsing"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor API calls in Purchase Order Convert Dialog and Manual Transaction Form to reduce page size and enable fetching all accounts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-31",
+    "title": "Workbook ERP Release — 2026-08-31",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-31.",
+    "date": "2026-08-31",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement server-side duplication for delivery notes and add packaging deletion functionality",
+      "Update packaging and inventory unit handling for better API compatibility"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement server-side duplication for delivery notes and add packaging deletion functionality"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update packaging and inventory unit handling for better API compatibility"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-30",
+    "title": "Workbook ERP Release — 2026-08-30",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-30.",
+    "date": "2026-08-30",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add PageLoader component import to multiple files for improved loading experience",
+      "Add stock quantity cell component and unit picker",
+      "Add variant packaging and pricing tabs with detailed measures and pricing information"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Add PageLoader component import to multiple files for improved loading experience",
           "Add stock quantity cell component and unit picker",
-          "Add variant packaging and pricing tabs with detailed measures and pricing information",
-          "Add unit of measurement constants and refactor line measure picker",
+          "Add variant packaging and pricing tabs with detailed measures and pricing information"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor packaging and conversion sections into separate card components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-29",
+    "title": "Workbook ERP Release — 2026-08-29",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-29.",
+    "date": "2026-08-29",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add unit of measurement constants and refactor line measure picker"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add unit of measurement constants and refactor line measure picker"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-28",
+    "title": "Workbook ERP Release — 2026-08-28",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-28.",
+    "date": "2026-08-28",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Implement unified line measure picker and related utilities for packaging and UOM handling",
+      "Add default packaging hook for purchase context",
+      "Enhance stock adjustment and transfer features with measured entry support"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Implement unified line measure picker and related utilities for packaging and UOM handling",
           "Add default packaging hook for purchase context",
-          "Enhance stock adjustment and transfer features with measured entry support",
+          "Enhance stock adjustment and transfer features with measured entry support"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor unit of measure handling across purchase orders, receipts, and sales orders"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-26",
+    "title": "Workbook ERP Release — 2026-08-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-26.",
+    "date": "2026-08-26",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enable pointer events for city and region popovers",
+      "Add payment history tab and receipt management to invoice detail sheet"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enable pointer events for city and region popovers",
-          "Add payment history tab and receipt management to invoice detail sheet",
-          "Enhance user actions with dropdown menu for role management and user status",
+          "Add payment history tab and receipt management to invoice detail sheet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-25",
+    "title": "Workbook ERP Release — 2026-08-25",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-25.",
+    "date": "2026-08-25",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance user actions with dropdown menu for role management and user status"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance user actions with dropdown menu for role management and user status"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-24",
+    "title": "Workbook ERP Release — 2026-08-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-24.",
+    "date": "2026-08-24",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Reorder 'Bills' navigation item for improved accessibility",
+      "Implement fixed asset import utilities and WebSocket handling",
+      "Remove conditional rendering of detail in DuplicateFileDialog"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Reorder 'Bills' navigation item for improved accessibility",
-          "Implement fixed asset import utilities and WebSocket handling",
-          "Add purchase order receipt types and utility functions",
-          "Add PDF export functionality for form responses",
+          "Implement fixed asset import utilities and WebSocket handling"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove conditional rendering of detail in DuplicateFileDialog"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-23",
+    "title": "Workbook ERP Release — 2026-08-23",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-23.",
+    "date": "2026-08-23",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add purchase order receipt types and utility functions"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add purchase order receipt types and utility functions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-20",
+    "title": "Workbook ERP Release — 2026-08-20",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-20.",
+    "date": "2026-08-20",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add PDF export functionality for form responses",
+      "Update zIndex and pointerEvents in BranchPopoverDefault for better interaction handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add PDF export functionality for form responses"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update zIndex and pointerEvents in BranchPopoverDefault for better interaction handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-19",
+    "title": "Workbook ERP Release — 2026-08-19",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-19.",
+    "date": "2026-08-19",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance origin handling and marketing site redirection for shared forms",
+      "Update analytics components to improve date range selection and labels",
+      "Move public respondent flow to /f/:code share codes"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enhance origin handling and marketing site redirection for shared forms",
           "Update analytics components to improve date range selection and labels",
           "Move public respondent flow to /f/:code share codes",
@@ -116,7 +759,29 @@
           "Add explicit order property to CreateFormQuestionInput and update related functions",
           "Enhance SelectFieldControl to allow clearing selection and improve radio button behavior",
           "Add analytics components for free-text questions",
-          "Add reopen functionality for custom forms",
+          "Add reopen functionality for custom forms"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-18",
+    "title": "Workbook ERP Release — 2026-08-18",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-18.",
+    "date": "2026-08-18",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Update PoweredByWorkbook logo dimensions for improved visibility",
+      "Update privacy notice text for clarity and add explanatory comments",
+      "Update form shell styles and adjust PoweredByWorkbook component size"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Update PoweredByWorkbook logo dimensions for improved visibility",
           "Update privacy notice text for clarity and add explanatory comments",
           "Update form shell styles and adjust PoweredByWorkbook component size",
@@ -124,7 +789,37 @@
           "Enhance builder settings pane with explicit editing and save functionality",
           "Enhance responses view with data grid implementation and responsive layout adjustments",
           "Implement response detail dialog and enhance responses view with schema handling",
-          "Add responses view and summary components for custom forms",
+          "Add responses view and summary components for custom forms"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Improve layout and responsiveness of analytics components",
+          "Refactor analytics handling and remove client-side summary logic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-17",
+    "title": "Workbook ERP Release — 2026-08-17",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-17.",
+    "date": "2026-08-17",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enhance publish functionality with share link and editor access",
+      "Implement delete page functionality with confirmation dialog",
+      "Add question type gallery dialog and enhance question type picker with search functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enhance publish functionality with share link and editor access",
           "Implement delete page functionality with confirmation dialog",
           "Add question type gallery dialog and enhance question type picker with search functionality",
@@ -133,8 +828,47 @@
           "Add success toast for page deletion",
           "Fix premature API calls when adding a form question",
           "Fix form builder card to allow auto collapse when cursor is placed out of the builder and add field sorting",
+          "Refactor lead filters and queries"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update drag-and-drop logic and improve component styling in form builder",
+          "Widen builder settings pane component and improve question preview tile layout styling",
+          "Update the form builder canvas for the section and pages",
+          "Build custom forms, previews and structure"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Fix section title input and save button behavior",
+          "Update system component version to 16.3.1 and adjust form page layout"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-14",
+    "title": "Workbook ERP Release — 2026-08-14",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-14.",
+    "date": "2026-08-14",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add form draft storage, normalization, and validation utilities",
+      "Add delivery note quick action and integrate with search functionality",
+      "Implement project delivery notes tab with filtering and pagination"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Add form draft storage, normalization, and validation utilities",
-          "Refactor lead filters and queries",
           "Add delivery note quick action and integrate with search functionality",
           "Implement project delivery notes tab with filtering and pagination",
           "Add contact detail sheet integration in invoice listing for improved contact management",
@@ -147,8 +881,65 @@
           "Enhance checkbox styles with custom background and border colors for checked state",
           "Refine auth glass card dimensions and add expanded width option for better layout handling",
           "Enhance auth layout with scoped brand colors and improved button styles",
-          "Implement immersive auth layout with glass card and slideshow background",
-          "Add education management features to employee detail page",
+          "Implement immersive auth layout with glass card and slideshow background"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update delete button styling for improved visibility and interaction"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update labels from \"Dispatched By\" to \"Delivered By\" for consistency across delivery notes",
+          "Update text color and placeholder for email inputs in sign-up and forgot password views",
+          "Update sign-in view text color and placeholder for email input",
+          "Adjust data-slot attribute order in input, select, textarea components for proper prop handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-12",
+    "title": "Workbook ERP Release — 2026-08-12",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-12.",
+    "date": "2026-08-12",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add education management features to employee detail page"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add education management features to employee detail page"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-11",
+    "title": "Workbook ERP Release — 2026-08-11",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-11.",
+    "date": "2026-08-11",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Refactor previous employment section to use table layout for improved readability",
+      "Refactor employee languages section to use table layout and enhance language capability display",
+      "Enhance employee detail sections with additional information and bulk language creation"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Refactor previous employment section to use table layout for improved readability",
           "Refactor employee languages section to use table layout and enhance language capability display",
           "Enhance employee detail sections with additional information and bulk language creation",
@@ -163,7 +954,44 @@
           "Integrate DatePicker for identification date selection in employee details",
           "Enhance employee phone management with error handling and UI improvements",
           "Enhance employee phone management with primary phone selection",
-          "Enhance employee phone management with improved accessibility and UI updates",
+          "Enhance employee phone management with improved accessibility and UI updates"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove employee custom fields section from profile panel",
+          "Improve UI elements in employee sections",
+          "Simplify grid structure in employee payment section",
+          "Improve layout and structure of employee identifications section"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Improve display logic for employee detail page"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-10",
+    "title": "Workbook ERP Release — 2026-08-10",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-10.",
+    "date": "2026-08-10",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance employee management with associated employee preview dialog and UI improvements",
+      "Integrate DatePicker for date of birth selection in contact person form",
+      "Implement employee family, next of kin, and emergency contact management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
           "Enhance employee management with associated employee preview dialog and UI improvements",
           "Integrate DatePicker for date of birth selection in contact person form",
           "Implement employee family, next of kin, and emergency contact management"
@@ -172,126 +1000,3902 @@
       {
         "heading": "⚡ Improvements",
         "items": [
-          "Refine typography, font-mono usage, and cards in CFO dashboard",
-          "Update font-mono guidelines in developer instructions",
-          "Revert \"feat(settings): vertical section rail + horizontal sub-tabs\"",
-          "Rebuild the insights customer panels",
-          "Modularize sales and receipt analytics components and view options",
-          "Update brand color tokens across accounts, crm, cash sales, projects, and users components",
-          "Update invite page and business router client brand styles",
-          "Align button, animated tabs, data-grid-table, and loading-overlay with brand tokens",
-          "Update sidebar layout and quick action popovers to unified brand color tokens",
-          "Update brand color CSS variables and app icon asset",
-          "Update tab colors to use unified brand color variables",
-          "Chore(design): cleanup scratch design documentation and session config",
-          "Update feature components to unified brand color",
-          "Align auth layout, business router, invite, and sign-up views with brand styles",
-          "Update sidebar, search, and quick action popovers to unified brand color",
-          "Update core UI component colors and calendar styling",
-          "Unify brand colors, tokens, and theme provider setup",
-          "Refactor code structure for improved readability and maintainability",
-          "Update Makefile targets for clarity and enhance stock opening balance validation",
-          "Update handling of branch ID in upload and import actions, improve UI for row preview",
-          "Update Makefile targets for clarity and enhance stock opening balance validation",
-          "Update handling of branch ID in upload and import actions, improve UI for row preview",
-          "Refactor purchasing line handling to support entry units and packaging",
-          "Refactor API calls in Purchase Order Convert Dialog and Manual Transaction Form to reduce page size and enable fetching all accounts",
-          "Refactor packaging and conversion sections into separate card components",
-          "Refactor unit of measure handling across purchase orders, receipts, and sales orders",
-          "Remove conditional rendering of detail in DuplicateFileDialog",
-          "Improve layout and responsiveness of analytics components",
-          "Refactor analytics handling and remove client-side summary logic",
-          "Update drag-and-drop logic and improve component styling in form builder",
-          "Widen builder settings pane component and improve question preview tile layout styling",
-          "Update the form builder canvas for the section and pages",
-          "Build custom forms, previews and structure",
-          "Update delete button styling for improved visibility and interaction",
-          "Remove employee custom fields section from profile panel",
-          "Improve UI elements in employee sections",
-          "Simplify grid structure in employee payment section",
-          "Improve layout and structure of employee identifications section",
           "Reorganize wizard steps and enhance employee creation dialog",
           "Adjust FooterNote component margin for improved layout",
           "Improve layout and styling in delivery note components",
           "Enhance delivery note components with logo and estamp size adjustments",
           "Update onCreateDeliveryNote callback to accept row parameter",
           "Enhance delivery note creation and management with new source handling",
-          "Enhance delivery note functionality and layout with new components and pagination"
-        ]
-      },
-      {
-        "heading": "🐛 Bug Fixes",
-        "items": [
-          "Standardize sample-data badging in reliable-payers panel",
-          "Remove CashSalesInsights component due to redundancy",
-          "Update grid classes for consistent layout in loading and data states",
-          "Refine layout and insights across credit notes, invoices, and receipts",
-          "Match status-strip column count to tile count, capped at 4",
-          "Remove Register/Insights tabs from the estimates listing",
-          "Fix empty space in invoice status card, drop broken overdue chart",
-          "Restore viewport fallback for custom fields grid",
-          "Resolve import inconsistencies and clean up unused imports in sales orders listing",
-          "Unify spacing and layout across sales page routes",
-          "Standardize spacing and toolbar layout across sales feature listings",
-          "Update button text color for better visibility in approval policy panel",
-          "Update pagination handling in InventoryTableApi and useDataTable to prevent stale data rendering",
-          "Update pagination handling in InventoryTableApi and useDataTable to prevent stale data rendering",
-          "Improve error handling and user feedback in Goods Receive Sheet",
-          "Optimize invoice config fetching based on sheet visibility",
-          "Update packaging and inventory unit handling for better API compatibility",
-          "Update zIndex and pointerEvents in BranchPopoverDefault for better interaction handling",
-          "Fix section title input and save button behavior",
-          "Update system component version to 16.3.1 and adjust form page layout",
-          "Update labels from \"Dispatched By\" to \"Delivered By\" for consistency across delivery notes",
-          "Update text color and placeholder for email inputs in sign-up and forgot password views",
-          "Update sign-in view text color and placeholder for email input",
-          "Adjust data-slot attribute order in input, select, textarea components for proper prop handling",
-          "Improve display logic for employee detail page"
+          "Enhance delivery note functionality and layout with new components and pagination",
+          "Update delivery note structure and fields for improved clarity and functionality",
+          "Enhance delivery note components with layout and styling improvements",
+          "Update FooterNote component styling and positioning in delivery note documents",
+          "Improve layout and styling in EditableSignatures component",
+          "Update delivery note components for improved data handling and layout",
+          "Enhance delivery note components with new logistics fields and layout improvements",
+          "Enhance delivery note components with new fields and layout adjustments"
         ]
       }
     ]
   },
   {
-    "id": "rel-2026-09-18",
-    "title": "Workbook ERP Update — Navigation & Customer Insights",
-    "description": "Added new settings navigation rail, improved cash sales tracking, and upgraded reporting status visualizations.",
-    "date": "2026-09-18",
-    "version": "v2.4.0",
+    "id": "rel-2026-08-08",
+    "title": "Workbook ERP Release — 2026-08-08",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-08.",
+    "date": "2026-08-08",
     "tags": [
-      "UI/UX",
-      "Settings",
-      "Reports"
+      "Features",
+      "Improvements",
+      "Fixes"
     ],
-    "media": {
-      "type": "video",
-      "url": "/demo.mp4",
-      "alt": "Demo walkthrough of navigation rail"
-    },
     "highlights": [
-      "Streamlined Settings navigation rail for faster administration",
-      "Upgraded status strip reporting charts to interactive donut rings",
-      "Enhanced Cash Sales metadata and payment method breakdown"
+      "Refactor delivery note components to enhance note handling",
+      "Add delivery note, estimate, and invoice custom fields API documentation",
+      "Reposition FooterNote in delivery note components"
     ],
     "sections": [
       {
         "heading": "✨ New Features",
         "items": [
-          "Introduced vertical settings section rail for quicker access to organization preferences.",
-          "Rebuilt Customer Insights panels to pair metrics into balanced grid layouts."
+          "Refactor delivery note components to enhance note handling",
+          "Add delivery note, estimate, and invoice custom fields API documentation"
         ]
       },
       {
         "heading": "⚡ Improvements",
         "items": [
-          "Replaced linear status strips with interactive donut ring visualizations in analytics views.",
-          "Improved payment method metadata tracking in Cash Sales."
+          "Reposition FooterNote in delivery note components",
+          "Simplify note block components in delivery notes",
+          "Simplify delivery note line product cell and enhance query handling",
+          "Replace delivery note config sheet with dialog component",
+          "Adjust layout and styles in delivery note signatures",
+          "Update terminology and layout in delivery note components",
+          "Streamline delivery note components and enhance product selection",
+          "Clean up editable signatures component and remove unused code"
         ]
       },
       {
         "heading": "🐛 Bug Fixes",
         "items": [
-          "Fixed layout grid spacing in entity groups across loading and active data states.",
-          "Resolved viewport alignment issues in custom fields grid."
+          "Update default authentication template ID",
+          "Update default authentication template ID"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-07",
+    "title": "Workbook ERP Release — 2026-08-07",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-07.",
+    "date": "2026-08-07",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Increase system component memory limit for build process",
+      "Enhance Estamp positioning and sample invoice rendering",
+      "Enhance image cropper and Estamp components for improved functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Increase system component memory limit for build process",
+          "Enhance Estamp positioning and sample invoice rendering",
+          "Enhance image cropper and Estamp components for improved functionality",
+          "Implement Estamp configuration and integration across invoice components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-05",
+    "title": "Workbook ERP Release — 2026-08-05",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-05.",
+    "date": "2026-08-05",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance invoice components with payment terms and contact details",
+      "Implement pagination and loading for project selection",
+      "Enhance project selection with improved item display"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance invoice components with payment terms and contact details",
+          "Implement pagination and loading for project selection",
+          "Enhance project selection with improved item display",
+          "Enhance invoice components with project number integration",
+          "Update invoice PDF and zone fields styling for improved presentation",
+          "Add toggle for showing voided bills and invoices in listings"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-04",
+    "title": "Workbook ERP Release — 2026-08-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-04.",
+    "date": "2026-08-04",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add isOpenApplyableVoucher utility and refactor voucher filtering",
+      "Implement transaction type formatting in statement components",
+      "Enhance prepayment components with document and contact viewing functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add isOpenApplyableVoucher utility and refactor voucher filtering",
+          "Implement transaction type formatting in statement components",
+          "Enhance prepayment components with document and contact viewing functionality",
+          "Enhance DealsListing component with improved table styling and pinning behavior",
+          "Enhance FieldEditorDialog with radio group and improved entity selection",
+          "Enhance DealsListing component with debounced search and improved column pinning",
+          "Add stage movement functionality to deal components",
+          "Add project number handling to project forms and tables",
+          "Improve additional details layout and width handling",
+          "Add phone input support to additional detail fields and category forms",
+          "Add reactivation functionality for custom fields",
+          "Implement archiving functionality for custom fields, groups, and categories",
+          "Enhance group creation process with duplicate name handling",
+          "Enhance invoice template editor with preferred field group handling and date formatting",
+          "Enhance additional detail field control with new date and time handling",
+          "Enhance custom fields functionality with new types and update utilities",
+          "Add field drag-and-drop preview and enhance styling in category form sample",
+          "Add drag-and-drop preview for category reordering in category form sample",
+          "Enhance drag-and-drop functionality in category form sample",
+          "Implement drag-and-drop category reordering in category form sample",
+          "Enhance custom fields and invoice settings with new features",
+          "Enhance custom fields access control in invoice and settings components"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Clean up custom fields settings and entity panels by removing unused props",
+          "Improve layout and styling in category form sample component",
+          "Simplify styling in category form sample component",
+          "Streamline category management and enhance drag-and-drop functionality"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Adjust max height for Kanban columns in DealsKanban component",
+          "Update badge styling for inactive custom fields"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-03",
+    "title": "Workbook ERP Release — 2026-08-03",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-03.",
+    "date": "2026-08-03",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance custom fields settings with layout display functionality",
+      "Improve invoice and additional details rendering",
+      "Enhance category and field management in custom fields"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance custom fields settings with layout display functionality",
+          "Improve invoice and additional details rendering",
+          "Enhance category and field management in custom fields",
+          "Enhance invoice customization with theme and font management",
+          "Add bulk field and category management for custom fields",
+          "Implement category editor dialog for custom fields management",
+          "Introduce estimate and invoice custom fields APIs with enhanced management capabilities",
+          "Enhance custom fields management with new group and field dialogs"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update API documentation and enhance custom fields settings",
+          "Update popover components with consistent styling",
+          "Update custom fields API documentation and enhance invoice/estimate handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-02",
+    "title": "Workbook ERP Release — 2026-08-02",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-02.",
+    "date": "2026-08-02",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance additional details handling with entity-specific section filtering",
+      "Implement delivery note PDF generation with customizable layouts and themes",
+      "Enhance additional details rendering and layout in invoice components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance additional details handling with entity-specific section filtering",
+          "Implement delivery note PDF generation with customizable layouts and themes",
+          "Enhance additional details rendering and layout in invoice components",
+          "Enhance invoice and estimate handling in document attachments",
+          "Enhance InvoicePDF component with estimate handling and styling improvements",
+          "Implement estimate custom fields API and enhance invoice template integration",
+          "Add audit stamp component and integrate into entity fields and groups",
+          "Rename invoice configuration components and enhance additional details handling",
+          "Streamline invoice preview and additional details handling",
+          "Enhance invoice handling with additional details and validation improvements",
+          "Enhance additional detail handling for lists and selections",
+          "Implement custom fields and groups management UI components",
+          "Introduce Invoice custom fields API documentation and enhance invoice template handling",
+          "Enhance CustomFieldsSettings and FieldEditorDialog with improved selection handling"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Improve PDF rendering structure for header fields in InvoicePDF component",
+          "Update PDF rendering styles and meta field handling in zone fields",
+          "Remove outdated API documentation and enhance settings tab naming"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-08-01",
+    "title": "Workbook ERP Release — 2026-08-01",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-08-01.",
+    "date": "2026-08-01",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement visibility control for additional details in forms",
+      "Add branch_id filter to income statement export functions",
+      "Update FieldEditorDialog and SearchableSelect component styles"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement visibility control for additional details in forms",
+          "Add branch_id filter to income statement export functions"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update FieldEditorDialog and SearchableSelect component styles",
+          "Update Custom Fields Engine documentation and UI components",
+          "Restore custom-fields types and preview wiring after merge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-31",
+    "title": "Workbook ERP Release — 2026-07-31",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-31.",
+    "date": "2026-07-31",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance overpayment disposition dialog with new balance handling",
+      "Enhance Custom Fields Engine with new group management and UI improvements",
+      "Implement Custom Fields Engine frontend components and settings"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance overpayment disposition dialog with new balance handling",
+          "Enhance Custom Fields Engine with new group management and UI improvements",
+          "Implement Custom Fields Engine frontend components and settings"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-30",
+    "title": "Workbook ERP Release — 2026-07-30",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-30.",
+    "date": "2026-07-30",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement infinite scrolling and search functionality in CRM components",
+      "Remove additional details feature from invoices; keep decimal and FX",
+      "Introduce Custom Fields Engine and enhance invoice configuration"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement infinite scrolling and search functionality in CRM components",
+          "Remove additional details feature from invoices; keep decimal and FX",
+          "Introduce Custom Fields Engine and enhance invoice configuration"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance editability controls in bill template and header section",
+          "Improve footer styling in invoice PDF component",
+          "Improve currency handling and exchange rate management in invoice and bill templates",
+          "Enhance formatted number input and bill template for decimal handling",
+          "Standardize invoice layout presets and improve configuration"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Revert custom fields and invoice layout work; keep decimal and FX",
+          "Remove custom fields settings UI from production"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-29",
+    "title": "Workbook ERP Release — 2026-07-29",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-29.",
+    "date": "2026-07-29",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Streamline additional details layout and styling for invoices",
+      "Extend thermal invoice support to include 58MM format",
+      "Enhance invoice business configuration section and PDF layout"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Streamline additional details layout and styling for invoices"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Extend thermal invoice support to include 58MM format",
+          "Enhance invoice business configuration section and PDF layout",
+          "Update invoice status display styles in preview and PDF",
+          "Standardize font sizes and styles in invoice PDF components",
+          "Standardize font sizes and styles in invoice PDF and preview",
+          "Update invoice PDF layout for improved column width distribution",
+          "Enhance product popover styling and interaction",
+          "Improve layout and styling for invoice preview and PDF",
+          "Update invoice preview and PDF layout for improved clarity",
+          "Update page number display logic in invoice PDF",
+          "Improve invoice PDF layout and styling for payment information",
+          "Enhance invoice layout and styling for improved readability",
+          "Optimize layout and styling for invoice components",
+          "Simplify rendering logic for bordered fields in invoice zones",
+          "Enhance layout and styling for bordered fields in invoice zones",
+          "Adjust typography for invoice custom fields to improve consistency",
+          "Streamline layout for document attachments",
+          "Enhance invoice PDF and HTML layouts for bordered fields"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-28",
+    "title": "Workbook ERP Release — 2026-07-28",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-28.",
+    "date": "2026-07-28",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Update border styles and padding for zone fields in invoices",
+      "Standardize typography and padding for zone fields in invoices",
+      "Update typography and padding for zone fields in invoices"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update border styles and padding for zone fields in invoices",
+          "Standardize typography and padding for zone fields in invoices",
+          "Update typography and padding for zone fields in invoices",
+          "Enhance additional details layout and rendering for improved clarity",
+          "Streamline additional details rendering and enhance layout responsiveness",
+          "Enhance invoice layout and additional details rendering",
+          "Streamline invoice layout and enhance additional details rendering",
+          "Enhance invoice layout and additional details management",
+          "Implement additional details display preferences for invoices"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance layout and styling for bordered zone fields in invoices",
+          "Standardize invoice content typography and improve layout consistency",
+          "Update typography and layout for invoice preview and PDF rendering",
+          "Improve invoice PDF layout and typography for compact view",
+          "Remove dueInDays prop from invoice components for cleaner presentation",
+          "Simplify header and footer rendering logic in invoice PDF",
+          "Adjust typography settings for zone fields in invoices",
+          "Implement dynamic notes font sizing for improved readability in invoices",
+          "Enhance theme color handling and layout consistency across invoice components",
+          "Implement theme color management for invoice components",
+          "Enhance invoice typography and styling for improved consistency",
+          "Unify typography and improve styling consistency across invoice components",
+          "Improve invoice preview and PDF styling for enhanced clarity",
+          "Update PDF layout and styling for improved presentation",
+          "Enhance invoice preview and PDF components with tax line display",
+          "Update invoice preview and PDF layout for consistency",
+          "Optimize invoice header rendering and layout consistency"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-27",
+    "title": "Workbook ERP Release — 2026-07-27",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-27.",
+    "date": "2026-07-27",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance invoice preview and PDF components with additional details",
+      "Introduce custom fields prototype and enhance invoice configuration",
+      "Implement additional details template management for invoices"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance invoice preview and PDF components with additional details",
+          "Introduce custom fields prototype and enhance invoice configuration",
+          "Implement additional details template management for invoices",
+          "Improve layout and styling of additional detail components",
+          "Add additional details functionality to invoice components",
+          "Enhance amortization components with UI improvements and new features",
+          "Enhance amortization components with UI improvements and new features",
+          "Enhance deferred revenue and amortization management with new features"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-26",
+    "title": "Workbook ERP Release — 2026-07-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-26.",
+    "date": "2026-07-26",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement schedule detail components for amortization management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement schedule detail components for amortization management"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-25",
+    "title": "Workbook ERP Release — 2026-07-25",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-25.",
+    "date": "2026-07-25",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance layout and invoice components with currency handling and script integration",
+      "Update money handling in amortization components",
+      "Implement notifications system for amortization batch runs"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance layout and invoice components with currency handling and script integration",
+          "Update money handling in amortization components",
+          "Implement notifications system for amortization batch runs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-24",
+    "title": "Workbook ERP Release — 2026-07-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-24.",
+    "date": "2026-07-24",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance amortization management with new dialogs and polling functionality",
+      "Introduce prepaid expenses and deferred revenue management in frontend"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance amortization management with new dialogs and polling functionality",
+          "Introduce prepaid expenses and deferred revenue management in frontend"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-23",
+    "title": "Workbook ERP Release — 2026-07-23",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-23.",
+    "date": "2026-07-23",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance AnimatedTabs component with scroll handling and viewport management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance AnimatedTabs component with scroll handling and viewport management"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-22",
+    "title": "Workbook ERP Release — 2026-07-22",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-22.",
+    "date": "2026-07-22",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add account type handling for contacts",
+      "Enhance prepayment functionality with account selection",
+      "Enhance prepayment components and functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add account type handling for contacts",
+          "Enhance prepayment functionality with account selection",
+          "Enhance prepayment components and functionality",
+          "Enhance prepayment functionalities in frontend"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Simplify tooltip text styles in contacts columns"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-20",
+    "title": "Workbook ERP Release — 2026-07-20",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-20.",
+    "date": "2026-07-20",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add frontend integration guide for customer and vendor prepayments"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add frontend integration guide for customer and vendor prepayments"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-17",
+    "title": "Workbook ERP Release — 2026-07-17",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-17.",
+    "date": "2026-07-17",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance contact person handling in project form",
+      "Implement quick action hooks and enhance sales and CRM components",
+      "Implement section tabs for various modules"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance contact person handling in project form",
+          "Implement quick action hooks and enhance sales and CRM components",
+          "Implement section tabs for various modules"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update button styles and text sizes across multiple components",
+          "Remove live script from layout and update inventory category handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-16",
+    "title": "Workbook ERP Release — 2026-07-16",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-16.",
+    "date": "2026-07-16",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add monospace typography option to inventory dashboard components",
+      "Update landed costs terminology and enhance inventory components",
+      "Update allowed development origin and enhance dashboard components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add monospace typography option to inventory dashboard components",
+          "Update landed costs terminology and enhance inventory components",
+          "Update allowed development origin and enhance dashboard components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-15",
+    "title": "Workbook ERP Release — 2026-07-15",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-15.",
+    "date": "2026-07-15",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add inventory analytics API documentation and update stock take components",
+      "Add inventory overview page and enhance dashboard navigation",
+      "Enhance kiosk cart functionality with packaging and quantity management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add inventory analytics API documentation and update stock take components",
+          "Add inventory overview page and enhance dashboard navigation",
+          "Enhance kiosk cart functionality with packaging and quantity management"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-14",
+    "title": "Workbook ERP Release — 2026-07-14",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-14.",
+    "date": "2026-07-14",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Introduce Landed Cost Split Delivery PRD and update UI components",
+      "Enhance landed costs functionality with new eligibility checks and UI updates",
+      "Implement void functionality for goods receipts and enhance status handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Introduce Landed Cost Split Delivery PRD and update UI components",
+          "Enhance landed costs functionality with new eligibility checks and UI updates",
+          "Implement void functionality for goods receipts and enhance status handling",
+          "Add quantity conversion dialog and enhance purchase order components",
+          "Implement landed cost prompt in goods receives workflow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-13",
+    "title": "Workbook ERP Release — 2026-07-13",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-13.",
+    "date": "2026-07-13",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Introduce landed costs feature with UI enhancements and API integration",
+      "Update stock revaluation adjustments and inventory components with currency handling and UI enhancements",
+      "Clean up cash bank accounts table and columns"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Introduce landed costs feature with UI enhancements and API integration",
+          "Update stock revaluation adjustments and inventory components with currency handling and UI enhancements"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Clean up cash bank accounts table and columns",
+          "Clean up cash bank accounts table and columns"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-08",
+    "title": "Workbook ERP Release — 2026-07-08",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-08.",
+    "date": "2026-07-08",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance stock adjustment and revaluation components with currency handling and cost parsing improvements",
+      "Add stock revaluation adjustments feature with utility functions, table component, and validation schema"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance stock adjustment and revaluation components with currency handling and cost parsing improvements",
+          "Add stock revaluation adjustments feature with utility functions, table component, and validation schema"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-07",
+    "title": "Workbook ERP Release — 2026-07-07",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-07.",
+    "date": "2026-07-07",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enhance GoodsReceiveItemsTable layout with improved column sizes and pinning functionality",
+      "Update allowedDevOrigins to new IP address for development environment",
+      "Add goods receipt functionality and enhance UI components for better user experience"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance GoodsReceiveItemsTable layout with improved column sizes and pinning functionality",
+          "Update allowedDevOrigins to new IP address for development environment",
+          "Add goods receipt functionality and enhance UI components for better user experience"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update column pinning in GoodsReceiveItemsTable to include index"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-06",
+    "title": "Workbook ERP Release — 2026-07-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-06.",
+    "date": "2026-07-06",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add completed_at field to milestones and integrate date selection in forms",
+      "Add completed_at field to milestones and integrate date selection in forms"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add completed_at field to milestones and integrate date selection in forms",
+          "Add completed_at field to milestones and integrate date selection in forms"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-04",
+    "title": "Workbook ERP Release — 2026-07-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-04.",
+    "date": "2026-07-04",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add editing functionality for cash sales and receipts, including UI updates and state management",
+      "Update allowedDevOrigins for development environment"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add editing functionality for cash sales and receipts, including UI updates and state management"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update allowedDevOrigins for development environment"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-03",
+    "title": "Workbook ERP Release — 2026-07-03",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-03.",
+    "date": "2026-07-03",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Refactor role dialog and permission picker components for improved readability and maintainability",
+      "Refactor code for improved readability and consistency across various components"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor role dialog and permission picker components for improved readability and maintainability",
+          "Refactor code for improved readability and consistency across various components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-02",
+    "title": "Workbook ERP Release — 2026-07-02",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-02.",
+    "date": "2026-07-02",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Implement milestone reordering functionality and enhance project management UI",
+      "Update sign-in view and adjust auth layout templates"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement milestone reordering functionality and enhance project management UI"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update sign-in view and adjust auth layout templates"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-07-01",
+    "title": "Workbook ERP Release — 2026-07-01",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-07-01.",
+    "date": "2026-07-01",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance cash sales functionality and improve UI components",
+      "Improve formatting and structure in various components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance cash sales functionality and improve UI components"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Improve formatting and structure in various components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-26",
+    "title": "Workbook ERP Release — 2026-06-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-26.",
+    "date": "2026-06-26",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance contact handling and display across components",
+      "Add new images and enhance slideshow functionality",
+      "Add authentication layout templates and slideshow functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance contact handling and display across components",
+          "Add new images and enhance slideshow functionality",
+          "Add authentication layout templates and slideshow functionality"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance AuthLayout and AuthSlideshow components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-25",
+    "title": "Workbook ERP Release — 2026-06-25",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-25.",
+    "date": "2026-06-25",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance cash bank account functionality in popover and reconciliation components",
+      "Enhance financial report pages with async search parameters",
+      "Update refund handling and UI components in cash sales"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance cash bank account functionality in popover and reconciliation components"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance financial report pages with async search parameters",
+          "Update refund handling and UI components in cash sales"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-24",
+    "title": "Workbook ERP Release — 2026-06-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-24.",
+    "date": "2026-06-24",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance thermal PDF styling and font integration",
+      "Simplify inventory validation in invoice template",
+      "Remove redundant overstock validation in invoice template"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance thermal PDF styling and font integration",
+          "Simplify inventory validation in invoice template",
+          "Remove redundant overstock validation in invoice template",
+          "Streamline inventory validation logic in invoice template"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-23",
+    "title": "Workbook ERP Release — 2026-06-23",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-23.",
+    "date": "2026-06-23",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement cash sales and kiosk mode functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement cash sales and kiosk mode functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-22",
+    "title": "Workbook ERP Release — 2026-06-22",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-22.",
+    "date": "2026-06-22",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement OTP resend countdown and role reset functionality",
+      "Implement directory-limited endpoints for contacts and cash bank accounts",
+      "Prepare company logos for thermal PDF output"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement OTP resend countdown and role reset functionality",
+          "Implement directory-limited endpoints for contacts and cash bank accounts",
+          "Prepare company logos for thermal PDF output",
+          "Add ThermalPoweredByFooter component for PDF documents"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update border color in thermal PDF components"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update support phone number and enhance PDF table row styling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-19",
+    "title": "Workbook ERP Release — 2026-06-19",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-19.",
+    "date": "2026-06-19",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance balance sheet PDF styling and structure",
+      "Enhance fixed asset form with migration asset logic"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance balance sheet PDF styling and structure",
+          "Enhance fixed asset form with migration asset logic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-17",
+    "title": "Workbook ERP Release — 2026-06-17",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-17.",
+    "date": "2026-06-17",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement expense and bill duplication functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement expense and bill duplication functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-16",
+    "title": "Workbook ERP Release — 2026-06-16",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-16.",
+    "date": "2026-06-16",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add partial return functionality to fulfillment management",
+      "Enhance invoice calculations and PDF generation",
+      "Add refund receipt functionality to receipts management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add partial return functionality to fulfillment management",
+          "Enhance invoice calculations and PDF generation",
+          "Add refund receipt functionality to receipts management",
+          "Update sales order PDF generation and print functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-15",
+    "title": "Workbook ERP Release — 2026-06-15",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-15.",
+    "date": "2026-06-15",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Refactor receipt and sales order header sections to use WalkInCustomerField component",
+      "Implement role-based permissions for product batches",
+      "Add batch tracking support to product variant sheet"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Refactor receipt and sales order header sections to use WalkInCustomerField component",
+          "Implement role-based permissions for product batches",
+          "Add batch tracking support to product variant sheet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-12",
+    "title": "Workbook ERP Release — 2026-06-12",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-12.",
+    "date": "2026-06-12",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Implement DocumentAttachmentQuickUpload component for bills and invoices",
+      "Enhance Chart of Accounts page with ScrollBar and layout adjustments",
+      "Enhance contact forms and account components with improved label handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement DocumentAttachmentQuickUpload component for bills and invoices",
+          "Enhance Chart of Accounts page with ScrollBar and layout adjustments",
+          "Enhance contact forms and account components with improved label handling"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update ScrollBar component styling and remove unnecessary class"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-11",
+    "title": "Workbook ERP Release — 2026-06-11",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-11.",
+    "date": "2026-06-11",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement document attachment features for bills and invoices",
+      "Implement bill attachments functionality",
+      "Implement invoice attachments functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement document attachment features for bills and invoices",
+          "Implement bill attachments functionality",
+          "Implement invoice attachments functionality",
+          "Add Tax Identification Number (TIN) support across invoice and contact components",
+          "Enhance PDF generation with new invoice pagination and media URL handling",
+          "Redesign invoice and sales receipt PDF layouts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-10",
+    "title": "Workbook ERP Release — 2026-06-10",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-10.",
+    "date": "2026-06-10",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add print format dialog for receipt PDF downloads and integrate with download handlers",
+      "Add ProjectDataGrid component and integrate it into ProjectListing; enhance project fetching parameters"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add print format dialog for receipt PDF downloads and integrate with download handlers",
+          "Add ProjectDataGrid component and integrate it into ProjectListing; enhance project fetching parameters"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-09",
+    "title": "Workbook ERP Release — 2026-06-09",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-09.",
+    "date": "2026-06-09",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement project query keys and refactor data fetching in project components",
+      "Add server-side search functionality for milestone categories and types, and enhance project detail component"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement project query keys and refactor data fetching in project components",
+          "Add server-side search functionality for milestone categories and types, and enhance project detail component"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-08",
+    "title": "Workbook ERP Release — 2026-06-08",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-08.",
+    "date": "2026-06-08",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement formatted input hook and enhance number formatting across components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement formatted input hook and enhance number formatting across components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-06",
+    "title": "Workbook ERP Release — 2026-06-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-06.",
+    "date": "2026-06-06",
+    "tags": [
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Simplify exchange rate fetching logic and update dependencies",
+      "Refactor code for improved readability and consistency across user and role components",
+      "Streamline tax amount display and improve opacity transitions in various templates"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Simplify exchange rate fetching logic and update dependencies",
+          "Refactor code for improved readability and consistency across user and role components"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Streamline tax amount display and improve opacity transitions in various templates"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-05",
+    "title": "Workbook ERP Release — 2026-06-05",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-05.",
+    "date": "2026-06-05",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add pagination fix form issues"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add pagination fix form issues"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-03",
+    "title": "Workbook ERP Release — 2026-06-03",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-03.",
+    "date": "2026-06-03",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add bill status multi-filter, foreign currency fields, and clickable bills",
+      "Add custom date range preset support",
+      "Date timezone parsing fixes, form and UX polish"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add bill status multi-filter, foreign currency fields, and clickable bills",
+          "Add custom date range preset support"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Date timezone parsing fixes, form and UX polish"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-06-01",
+    "title": "Workbook ERP Release — 2026-06-01",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-06-01.",
+    "date": "2026-06-01",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add project picker to sales docs & fix table scroll",
+      "Add tax inclusive pricing support for invoices",
+      "Add column visibility toggle to invoice datagrid"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add project picker to sales docs & fix table scroll",
+          "Add tax inclusive pricing support for invoices",
+          "Add column visibility toggle to invoice datagrid",
+          "Add excel export for inventory movement reports"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Handle empty search inputs in popovers and datagrid/ui bugs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-29",
+    "title": "Workbook ERP Release — 2026-05-29",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-29.",
+    "date": "2026-05-29",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add delete confirmations and improve modal overlays",
+      "Add delivery notes, activity feeds, and related utils",
+      "Implement comprehensive activity feed system and invoice delivery note generation features"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add delete confirmations and improve modal overlays",
+          "Add delivery notes, activity feeds, and related utils",
+          "Implement comprehensive activity feed system and invoice delivery note generation features"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-28",
+    "title": "Workbook ERP Release — 2026-05-28",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-28.",
+    "date": "2026-05-28",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Refactor LeadsListingTable layout for improved spacing and responsiveness",
+      "Refactor LeadsPage and LeadsListing components for improved layout and functionality",
+      "Update navigation links and refactor parameter handling in dashboard components"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor LeadsListingTable layout for improved spacing and responsiveness",
+          "Refactor LeadsPage and LeadsListing components for improved layout and functionality",
+          "Update navigation links and refactor parameter handling in dashboard components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-27",
+    "title": "Workbook ERP Release — 2026-05-27",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-27.",
+    "date": "2026-05-27",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Refactor estimate and invoice handling",
+      "Update customer information and enhance CRM components"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor estimate and invoice handling",
+          "Update customer information and enhance CRM components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-26",
+    "title": "Workbook ERP Release — 2026-05-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-26.",
+    "date": "2026-05-26",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Implement permission checks for Goods Receives and Credit Notes",
+      "Refactor milestone handling and improve project form components"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Implement permission checks for Goods Receives and Credit Notes",
+          "Refactor milestone handling and improve project form components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-25",
+    "title": "Workbook ERP Release — 2026-05-25",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-25.",
+    "date": "2026-05-25",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance DataTablePagination and FixedAssetForm components",
+      "Enhance CRM leads functionality and UI improvements"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance DataTablePagination and FixedAssetForm components",
+          "Enhance CRM leads functionality and UI improvements"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-23",
+    "title": "Workbook ERP Release — 2026-05-23",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-23.",
+    "date": "2026-05-23",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add revert to lead functionality and enhance contact details display",
+      "Enhance date validation in receipt components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add revert to lead functionality and enhance contact details display"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance date validation in receipt components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-22",
+    "title": "Workbook ERP Release — 2026-05-22",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-22.",
+    "date": "2026-05-22",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add API changes documentation for multi-currency support",
+      "Update API documentation and frontend components for multi-currency payment handling",
+      "Refactor console logging and enhance ESLint configuration"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add API changes documentation for multi-currency support"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update API documentation and frontend components for multi-currency payment handling",
+          "Refactor console logging and enhance ESLint configuration",
+          "Enhance activity management features and UI components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-21",
+    "title": "Workbook ERP Release — 2026-05-21",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-21.",
+    "date": "2026-05-21",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Refactor deal overview tab to enhance financial display and formatting"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor deal overview tab to enhance financial display and formatting"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-20",
+    "title": "Workbook ERP Release — 2026-05-20",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-20.",
+    "date": "2026-05-20",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add UI/UX requirements documentation and enhance header component",
+      "Add CRM and Inventory Dashboard Components",
+      "Enhance activity notes display with RichTextDisplay component"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add UI/UX requirements documentation and enhance header component",
+          "Add CRM and Inventory Dashboard Components"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance activity notes display with RichTextDisplay component",
+          "Enhance employee photo handling and avatar components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-19",
+    "title": "Workbook ERP Release — 2026-05-19",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-19.",
+    "date": "2026-05-19",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Update project configuration and enhance components"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update project configuration and enhance components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-18",
+    "title": "Workbook ERP Release — 2026-05-18",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-18.",
+    "date": "2026-05-18",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add comment mention composer and enhance comment functionality",
+      "Add dashboard tab permissions and enhance OverviewDashboard with access control",
+      "Update CFO Dashboard API requirements and enhance dashboard components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add comment mention composer and enhance comment functionality",
+          "Add dashboard tab permissions and enhance OverviewDashboard with access control"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update CFO Dashboard API requirements and enhance dashboard components",
+          "Refactor invoice and bill templates to utilize location stocks queries",
+          "Refactor inventory actions and components to utilize directory-limited endpoints",
+          "Enhance AppList and QuickActions components with permission handling",
+          "Upgrade system component to version 16.2.6 for improved performance and security"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-16",
+    "title": "Workbook ERP Release — 2026-05-16",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-16.",
+    "date": "2026-05-16",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add CFO and Sales Dashboard API Requirements Documentation",
+      "Refactor Makefile TAG requirement section for improved clarity",
+      "Update Makefile and pnpm-lock.yaml for clarity and dependency upgrades"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add CFO and Sales Dashboard API Requirements Documentation"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor Makefile TAG requirement section for improved clarity",
+          "Update Makefile and pnpm-lock.yaml for clarity and dependency upgrades",
+          "Update configuration and enhance CFO Dashboard components",
+          "Refactor Makefile for Improved Clarity and Consistency"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-15",
+    "title": "Workbook ERP Release — 2026-05-15",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-15.",
+    "date": "2026-05-15",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Revamp AppList and QuickActionsPopover components for improved UI and functionality",
+      "Remove AnimatedTabs component from OverviewDashboardContent for future refactoring.",
+      "Refactor Heatmap Component for Improved Functionality and Readability"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Revamp AppList and QuickActionsPopover components for improved UI and functionality"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove AnimatedTabs component from OverviewDashboardContent for future refactoring.",
+          "Refactor Heatmap Component for Improved Functionality and Readability",
+          "Enhance MetricStatCard and CrmSegmentedBarRow components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-14",
+    "title": "Workbook ERP Release — 2026-05-14",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-14.",
+    "date": "2026-05-14",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add pnpm workspace configuration and update Dockerfiles",
+      "Replace pipeline summary bar with metric stat cards for better visualization",
+      "Add trend data to MetricStatCard for leads metrics"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add pnpm workspace configuration and update Dockerfiles",
+          "Replace pipeline summary bar with metric stat cards for better visualization",
+          "Add trend data to MetricStatCard for leads metrics",
+          "Update Docker configurations and enhance CI/CD workflow",
+          "Update CRM components and enhance data handling",
+          "Add Docker support for local and production environments",
+          "Update CRM components and enhance data handling",
+          "Add Docker support for local and production environments",
+          "Refactor leads listing components for improved structure and functionality",
+          "Update CRM components and enhance data handling",
+          "Add Docker support for local and production environments",
+          "Add project overview attachments section and integrate into project overview tab",
+          "Enhance ProfitEquationStrip with tooltip and refactor project detail component",
+          "Add project analytics component with dummy data and loading state"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Streamline permission hooks and role management",
+          "Improve user role handling and permissions management",
+          "Refactor finance components and improve code organization",
+          "Refactor project detail component and extract hooks for better state management",
+          "Update shadcn customization commands and improve profit equation strip component",
+          "Refactor code structure for improved readability and maintainability"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-13",
+    "title": "Workbook ERP Release — 2026-05-13",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-13.",
+    "date": "2026-05-13",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add wrangler configuration file for Cloudflare Workers setup",
+      "Add wrangler configuration file for Cloudflare Workers setup",
+      "Enhance CRM analytics with new components and API functions"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add wrangler configuration file for Cloudflare Workers setup",
+          "Add wrangler configuration file for Cloudflare Workers setup",
+          "Enhance CRM analytics with new components and API functions",
+          "Add wrangler configuration file for Cloudflare Workers setup",
+          "Enhance CRM analytics with new components and API functions",
+          "Enhance CRM analytics with new components and API functions",
+          "Add wrangler configuration file for Cloudflare Workers setup",
+          "Enhance CRM analytics with new components and API functions",
+          "Add permission gates and enhance UI components with new metrics and progress indicators"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-12",
+    "title": "Workbook ERP Release — 2026-05-12",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-12.",
+    "date": "2026-05-12",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Implement permission checks for project actions and enhance UI feedback",
+      "Enhance permissions handling across various components",
+      "Enhance permission handling across reconciliation, refund receipts, transactions, and user roles"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement permission checks for project actions and enhance UI feedback",
+          "Enhance permissions handling across various components",
+          "Enhance permission handling across reconciliation, refund receipts, transactions, and user roles",
+          "Add attachment management for leads and contacts",
+          "Enhance milestone management with new types and form fields",
+          "Implement permission checks for project actions and enhance UI feedback",
+          "Enhance permissions handling across various components",
+          "Enhance permission handling across reconciliation, refund receipts, transactions, and user roles",
+          "Add attachment management for leads and contacts",
+          "Enhance milestone management with new types and form fields",
+          "Add attachment management for leads and contacts",
+          "Enhance milestone management with new types and form fields",
+          "Implement permission checks for project actions and enhance UI feedback",
+          "Enhance permissions handling across various components",
+          "Enhance permission handling across reconciliation, refund receipts, transactions, and user roles",
+          "Implement permission checks for project actions and enhance UI feedback",
+          "Enhance permissions handling across various components",
+          "Enhance permission handling across reconciliation, refund receipts, transactions, and user roles",
+          "Add attachment management for leads and contacts",
+          "Enhance milestone management with new types and form fields"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Simplify activity form validation and enhance date selection UI",
+          "Simplify activity form validation and enhance date selection UI"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-11",
+    "title": "Workbook ERP Release — 2026-05-11",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-11.",
+    "date": "2026-05-11",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add permission gate component and integrate role-based access control",
+      "Add permission gate component and integrate role-based access control",
+      "Add cookie encryption documentation and integrate @noble/ciphers for secure cookie handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add permission gate component and integrate role-based access control",
+          "Add permission gate component and integrate role-based access control",
+          "Add cookie encryption documentation and integrate @noble/ciphers for secure cookie handling",
+          "Add Sales & Receipts dashboard components and refine UI/UX",
+          "Add permission gate component and integrate role-based access control",
+          "Add cookie encryption documentation and integrate @noble/ciphers for secure cookie handling",
+          "Implement secure cookie encryption and decryption in session management to enhance data protection",
+          "Implement secure cookie management across storage utilities to enhance data protection",
+          "Implement secure cookie management in useInactivityTimer and useAuth hooks to enhance data protection",
+          "Implement secure cookie handling for user data to enhance security and prevent leaks",
+          "Replace cookie reading logic with secure decryption to enhance data protection",
+          "Encrypt cookie values to enhance security and prevent leaks",
+          "Add configuration for CSP and JSX comment syntax",
+          "Add Sales & Receipts dashboard components and refine UI/UX",
+          "Add permission gate component and integrate role-based access control",
+          "Add cookie encryption documentation and integrate @noble/ciphers for secure cookie handling",
+          "Implement secure cookie encryption and decryption in session management to enhance data protection",
+          "Implement secure cookie management across storage utilities to enhance data protection",
+          "Implement secure cookie management in useInactivityTimer and useAuth hooks to enhance data protection",
+          "Implement secure cookie handling for user data to enhance security and prevent leaks",
+          "Replace cookie reading logic with secure decryption to enhance data protection",
+          "Encrypt cookie values to enhance security and prevent leaks",
+          "Add configuration for CSP and JSX comment syntax",
+          "Add Sales & Receipts dashboard components and refine UI/UX"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Correct indentation and formatting in user role update dialog",
+          "Correct indentation and formatting in user role update dialog",
+          "Correct indentation and formatting in user role update dialog"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-08",
+    "title": "Workbook ERP Release — 2026-05-08",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-08.",
+    "date": "2026-05-08",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add deal stage history functionality and UI components",
+      "Add deal stage history functionality and UI components",
+      "Update pnpm-lock.yaml with new and removed dependencies"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add deal stage history functionality and UI components",
+          "Add deal stage history functionality and UI components",
+          "Update pnpm-lock.yaml with new and removed dependencies",
+          "Enhance CRM with confetti effects and UI improvements"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-07",
+    "title": "Workbook ERP Release — 2026-05-07",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-07.",
+    "date": "2026-05-07",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Implement case format toggle and enhance contact forms",
+      "Implement case format toggle and enhance contact forms",
+      "Update cash bank journal entry types and add foreign currency support"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement case format toggle and enhance contact forms",
+          "Implement case format toggle and enhance contact forms",
+          "Update cash bank journal entry types and add foreign currency support",
+          "Implement case format toggle and enhance contact forms",
+          "Implement case format toggle and enhance contact forms",
+          "Update cash bank journal entry types and add foreign currency support",
+          "Enhance financial chart card with quick insights and chart type toggle"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor CFO Dashboard Components",
+          "Refactor CFO Dashboard Components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-06",
+    "title": "Workbook ERP Release — 2026-05-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-06.",
+    "date": "2026-05-06",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance cash bank journal entries handling",
+      "Update pnpm-lock.yaml with new dependencies",
+      "Enhance CRM deals and pipeline management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance cash bank journal entries handling",
+          "Update pnpm-lock.yaml with new dependencies",
+          "Enhance CRM deals and pipeline management",
+          "Enhance cash bank journal entries handling",
+          "Update pnpm-lock.yaml with new dependencies",
+          "Enhance CRM deals and pipeline management",
+          "Add financial chart card, metric stat card, ratio indicator card, and status list card components",
+          "Add Quick Create Mega Menu component for streamlined creation of various entities"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-05",
+    "title": "Workbook ERP Release — 2026-05-05",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-05.",
+    "date": "2026-05-05",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance CRM deal management and employee number configuration",
+      "Enhance CRM pipeline summary and deal management",
+      "Introduce product type management in CRM"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance CRM deal management and employee number configuration",
+          "Enhance CRM pipeline summary and deal management",
+          "Introduce product type management in CRM",
+          "Enhance contact forms and address handling in CRM",
+          "Enhance CRM deals and leads management with new UI components",
+          "Enhance CRM deal management and employee number configuration",
+          "Enhance CRM pipeline summary and deal management",
+          "Introduce product type management in CRM",
+          "Enhance contact forms and address handling in CRM",
+          "Enhance CRM deals and leads management with new UI components",
+          "Enhance CRM deal management and employee number configuration",
+          "Enhance CRM pipeline summary and deal management",
+          "Introduce product type management in CRM",
+          "Enhance overview dashboard widgets with new icons and styling",
+          "Enhance contact forms and address handling in CRM",
+          "Refactor Recent Transactions Overview Widget and add P&L Metrics Sidebar Widget",
+          "Enhance ProfitLossOverviewWidget layout and improve tooltip content",
+          "Enhance CRM deals and leads management with new UI components",
+          "Enhance CRM deal management and employee number configuration"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Streamline employee number handling and document type configuration",
+          "Streamline employee number handling and document type configuration",
+          "Update HR Management title for clarity",
+          "Streamline employee number handling and document type configuration",
+          "Update HR Management title for clarity",
+          "Streamline employee number handling and document type configuration",
+          "Update HR Management title for clarity",
+          "Remove deprecated record direct customer payment sheet component"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-04",
+    "title": "Workbook ERP Release — 2026-05-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-04.",
+    "date": "2026-05-04",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enhance CRM lead conversion and employee selection features",
+      "Enhance CRM lead conversion and employee selection features",
+      "Enhance CRM lead conversion and employee selection features"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance CRM lead conversion and employee selection features",
+          "Enhance CRM lead conversion and employee selection features",
+          "Enhance CRM lead conversion and employee selection features",
+          "Enhance CRM lead conversion and employee selection features",
+          "Implement dark mode support and color management for charts",
+          "Add quick actions component and integrate into overview dashboard",
+          "Enhance dashboard and CRM settings components"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Simplify task status presentation in milestone task board",
+          "Simplify task status presentation in milestone task board",
+          "Simplify task status presentation in milestone task board",
+          "Remove unused fulfillment handling functions in InvoiceListing component"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update allowed development origins in system component configuration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-05-01",
+    "title": "Workbook ERP Release — 2026-05-01",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-05-01.",
+    "date": "2026-05-01",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add project profitability API and update project detail components",
+      "Enhance project comments and discussion features",
+      "Add support for task management enhancements in project components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add project profitability API and update project detail components",
+          "Enhance project comments and discussion features",
+          "Add support for task management enhancements in project components"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Improve employee detail layout and loading components",
+          "Improve layout structure and styling in dashboard components",
+          "Replace is_inventory_invoice with has_inventory across documentation and components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-30",
+    "title": "Workbook ERP Release — 2026-04-30",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-30.",
+    "date": "2026-04-30",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add support for task management enhancements in project components",
+      "Enhance project detail view with Gantt milestone and standalone tasks functionality",
+      "Enhance project attachment management and preview functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add support for task management enhancements in project components",
+          "Enhance project detail view with Gantt milestone and standalone tasks functionality",
+          "Enhance project attachment management and preview functionality",
+          "Enhance task management features in project components",
+          "Enhance milestone management with editing capabilities"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update task status color handling and enhance project types",
+          "Milestone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-29",
+    "title": "Workbook ERP Release — 2026-04-29",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-29.",
+    "date": "2026-04-29",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add createContact function and enhance CRM components",
+      "Enhance DatePicker component with time selection and improved props",
+      "Update MilestoneTaskBoard and ProjectMilestonesTab components for improved functionality and UI"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add createContact function and enhance CRM components",
+          "Enhance DatePicker component with time selection and improved props",
+          "Update MilestoneTaskBoard and ProjectMilestonesTab components for improved functionality and UI",
+          "Enhance project management with milestones and task features",
+          "Enhance project management with milestone and task functionalities"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Standardize activity status labels and clean up unused functions",
+          "Improve UI and responsiveness in MilestoneTaskBoard component",
+          "Improve UI and responsiveness in MilestoneTaskBoard component"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Standardize activity status labels and update CRM component logic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-28",
+    "title": "Workbook ERP Release — 2026-04-28",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-28.",
+    "date": "2026-04-28",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add task detail drawer component and project status configuration"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add task detail drawer component and project status configuration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-27",
+    "title": "Workbook ERP Release — 2026-04-27",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-27.",
+    "date": "2026-04-27",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Standardize activity status naming across components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Standardize activity status naming across components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-26",
+    "title": "Workbook ERP Release — 2026-04-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-26.",
+    "date": "2026-04-26",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance lead and pipeline management with branch selection and contact handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance lead and pipeline management with branch selection and contact handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-24",
+    "title": "Workbook ERP Release — 2026-04-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-24.",
+    "date": "2026-04-24",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add exchange rate handling and pipeline summary integration"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add exchange rate handling and pipeline summary integration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-22",
+    "title": "Workbook ERP Release — 2026-04-22",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-22.",
+    "date": "2026-04-22",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance deal management with activity tracking and status updates",
+      "Enhance CRM deal management with additional fields and query improvements",
+      "Add products to deal form"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance deal management with activity tracking and status updates",
+          "Enhance CRM deal management with additional fields and query improvements",
+          "Add products to deal form",
+          "Add activity calendar view component for CRM",
+          "Enhance CRM activity management with attachment upload and deletion"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Modify funnel charts and distribution"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-21",
+    "title": "Workbook ERP Release — 2026-04-21",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-21.",
+    "date": "2026-04-21",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement pipelines listing and management UI",
+      "Add sparkline data visualization for KPI trends",
+      "Add cancel reservation functionality and improve packaging handling in invoice components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement pipelines listing and management UI",
+          "Add sparkline data visualization for KPI trends",
+          "Add cancel reservation functionality and improve packaging handling in invoice components",
+          "Enhance lead detail and columns with avatar integration and address management",
+          "Enhance CRM address management with update functionality",
+          "Implement pipelines listing and management UI",
+          "Add sparkline data visualization for KPI trends",
+          "Add cancel reservation functionality and improve packaging handling in invoice components"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update delivery button text and remove unnecessary attribute validation in product variant sheet",
+          "Update delivery button text and remove unnecessary attribute validation in product variant sheet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-20",
+    "title": "Workbook ERP Release — 2026-04-20",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-20.",
+    "date": "2026-04-20",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add RESERVED status for fulfillments and enhance delivery handling",
+      "Add RESERVED status for fulfillments and enhance delivery handling",
+      "Update lead form to use new employee and industry data sources"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add RESERVED status for fulfillments and enhance delivery handling",
+          "Add RESERVED status for fulfillments and enhance delivery handling"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update lead form to use new employee and industry data sources"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-17",
+    "title": "Workbook ERP Release — 2026-04-17",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-17.",
+    "date": "2026-04-17",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add employee listing component and related types",
+      "Add pipeline manager and related types for sales pipelines",
+      "Remove overstock validation from packaging quantity inputs and buttons"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add employee listing component and related types",
+          "Add pipeline manager and related types for sales pipelines"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Remove overstock validation from packaging quantity inputs and buttons",
+          "Remove overstock validation from packaging quantity inputs and buttons"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-14",
+    "title": "Workbook ERP Release — 2026-04-14",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-14.",
+    "date": "2026-04-14",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance input validation for dimensions in packaging form",
+      "Update document number handling to use 'manual_required' mode in payment and goods receipt components",
+      "Update document number handling to use 'manual_required' mode and enhance dimension hierarchy view"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance input validation for dimensions in packaging form",
+          "Update document number handling to use 'manual_required' mode in payment and goods receipt components",
+          "Update document number handling to use 'manual_required' mode and enhance dimension hierarchy view"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-10",
+    "title": "Workbook ERP Release — 2026-04-10",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-10.",
+    "date": "2026-04-10",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add dimension delete confirmation dialog and trash zone component",
+      "Add dimension management components and dialogs"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add dimension delete confirmation dialog and trash zone component",
+          "Add dimension management components and dialogs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-07",
+    "title": "Workbook ERP Release — 2026-04-07",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-07.",
+    "date": "2026-04-07",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Refactor overview dashboard widgets for improved data handling and UI consistency"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor overview dashboard widgets for improved data handling and UI consistency"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-06",
+    "title": "Workbook ERP Release — 2026-04-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-06.",
+    "date": "2026-04-06",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add overview widgets for profit & loss, receivables, recent transactions, summary KPIs, and top products"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add overview widgets for profit & loss, receivables, recent transactions, summary KPIs, and top products"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-04",
+    "title": "Workbook ERP Release — 2026-04-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-04.",
+    "date": "2026-04-04",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add handleApply function to ReceiptDateFilter for setting date filter",
+      "Add Top Customers widget and mock data for CFO dashboard",
+      "Correct typo in navigation item title"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add handleApply function to ReceiptDateFilter for setting date filter",
+          "Add Top Customers widget and mock data for CFO dashboard"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Correct typo in navigation item title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-02",
+    "title": "Workbook ERP Release — 2026-04-02",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-02.",
+    "date": "2026-04-02",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance apply debit note dialog with bill preview functionality",
+      "Add quantity input for non-inventory items in bill template"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance apply debit note dialog with bill preview functionality",
+          "Add quantity input for non-inventory items in bill template"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-04-01",
+    "title": "Workbook ERP Release — 2026-04-01",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-04-01.",
+    "date": "2026-04-01",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add debit note detail and listing components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add debit note detail and listing components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-31",
+    "title": "Workbook ERP Release — 2026-03-31",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-31.",
+    "date": "2026-03-31",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance date filter functionality with pending state management",
+      "Enhance receipt filtering with date range and status options",
+      "Update imports to use type definitions for ReceiptAPIResponse"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance date filter functionality with pending state management",
+          "Enhance receipt filtering with date range and status options",
+          "Update imports to use type definitions for ReceiptAPIResponse",
+          "Enhance fixed asset detail view with opening balance and improved time series calculations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-27",
+    "title": "Workbook ERP Release — 2026-03-27",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-27.",
+    "date": "2026-03-27",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Remove console logs from header building functions across various actions"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove console logs from header building functions across various actions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-24",
+    "title": "Workbook ERP Release — 2026-03-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-24.",
+    "date": "2026-03-24",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance user authentication handling and error management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance user authentication handling and error management"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-20",
+    "title": "Workbook ERP Release — 2026-03-20",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-20.",
+    "date": "2026-03-20",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add journal report snapshot saving and types",
+      "Add report search bar component for financial reports"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add journal report snapshot saving and types",
+          "Add report search bar component for financial reports"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-18",
+    "title": "Workbook ERP Release — 2026-03-18",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-18.",
+    "date": "2026-03-18",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add cash flow statement functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add cash flow statement functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-16",
+    "title": "Workbook ERP Release — 2026-03-16",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-16.",
+    "date": "2026-03-16",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance income statement structure and export functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance income statement structure and export functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-13",
+    "title": "Workbook ERP Release — 2026-03-13",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-13.",
+    "date": "2026-03-13",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enforce 4-digit requirement for account code validation and improve error messaging",
+      "Implement money string parsing for discount and tax calculations in sales receipt PDF",
+      "Enhance multi-currency support in bill payment processing and UI components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enforce 4-digit requirement for account code validation and improve error messaging",
+          "Implement money string parsing for discount and tax calculations in sales receipt PDF",
+          "Enhance multi-currency support in bill payment processing and UI components"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Improve error handling for account code validation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-11",
+    "title": "Workbook ERP Release — 2026-03-11",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-11.",
+    "date": "2026-03-11",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement role detail sheet for viewing and managing role permissions",
+      "Add user profile update functionality and user account settings component"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement role detail sheet for viewing and managing role permissions",
+          "Add user profile update functionality and user account settings component"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-10",
+    "title": "Workbook ERP Release — 2026-03-10",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-10.",
+    "date": "2026-03-10",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add current user email handling to user columns and listing",
+      "Enhance organization settings with comprehensive profile management",
+      "Product variant does not exist"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add current user email handling to user columns and listing",
+          "Enhance organization settings with comprehensive profile management"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Product variant does not exist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-09",
+    "title": "Workbook ERP Release — 2026-03-09",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-09.",
+    "date": "2026-03-09",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Implement per-item create, update, and delete actions for draft invoices",
+      "Enhance document number settings and add new hooks for document number configuration"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement per-item create, update, and delete actions for draft invoices",
+          "Enhance document number settings and add new hooks for document number configuration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-06",
+    "title": "Workbook ERP Release — 2026-03-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-06.",
+    "date": "2026-03-06",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add document number settings and management features",
+      "Enhance refund receipt functionality and UI"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add document number settings and management features",
+          "Enhance refund receipt functionality and UI"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-03-03",
+    "title": "Workbook ERP Release — 2026-03-03",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-03-03.",
+    "date": "2026-03-03",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance receipt and refund receipt handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance receipt and refund receipt handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-27",
+    "title": "Workbook ERP Release — 2026-02-27",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-27.",
+    "date": "2026-02-27",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance invoice and receipt handling with tax and discount displays, improve UI responsiveness, and update product forms for better data management"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance invoice and receipt handling with tax and discount displays, improve UI responsiveness, and update product forms for better data management"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-26",
+    "title": "Workbook ERP Release — 2026-02-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-26.",
+    "date": "2026-02-26",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add discount fields to LineItem interface for enhanced pricing options",
+      "Update tax group labels in product variant sheet for clarity"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add discount fields to LineItem interface for enhanced pricing options",
+          "Update tax group labels in product variant sheet for clarity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-25",
+    "title": "Workbook ERP Release — 2026-02-25",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-25.",
+    "date": "2026-02-25",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enhance billing address handling and improve due date messaging consistency",
+      "Implement location-based inventory filtering and automatic tax application for invoice creation",
+      "Clean up whitespace and improve formatting in payment terms calculation"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance billing address handling and improve due date messaging consistency",
+          "Implement location-based inventory filtering and automatic tax application for invoice creation"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Clean up whitespace and improve formatting in payment terms calculation",
+          "Update due date messaging to use \"Due within\" for consistency across components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-24",
+    "title": "Workbook ERP Release — 2026-02-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-24.",
+    "date": "2026-02-24",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Reorganize imports and streamline PDF generation logic in useEstimatePdf hook",
+      "Enhance PDF generation and tax calculations in estimates",
+      "Implement TaxGroupPopover and enhance TaxGroupSheet with ScrollArea"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Reorganize imports and streamline PDF generation logic in useEstimatePdf hook",
+          "Enhance PDF generation and tax calculations in estimates",
+          "Implement TaxGroupPopover and enhance TaxGroupSheet with ScrollArea",
+          "Optimize imports and improve component structure in tax-related views",
+          "Implement tax rates and groups management with dynamic views"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-23",
+    "title": "Workbook ERP Release — 2026-02-23",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-23.",
+    "date": "2026-02-23",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add container type and quantity columns to product variants section",
+      "Enhance profit & loss statement with new features and PDF/Excel export capabilities",
+      "Remove container type handling from product variants section"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add container type and quantity columns to product variants section",
+          "Enhance profit & loss statement with new features and PDF/Excel export capabilities"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove container type handling from product variants section"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-18",
+    "title": "Workbook ERP Release — 2026-02-18",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-18.",
+    "date": "2026-02-18",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Refactor inventory movement components to unify reference handling and improve styling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Refactor inventory movement components to unify reference handling and improve styling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-17",
+    "title": "Workbook ERP Release — 2026-02-17",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-17.",
+    "date": "2026-02-17",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add trial balance snapshot export functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add trial balance snapshot export functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-16",
+    "title": "Workbook ERP Release — 2026-02-16",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-16.",
+    "date": "2026-02-16",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance multi-currency feature descriptions and improve image cropping validation"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance multi-currency feature descriptions and improve image cropping validation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-13",
+    "title": "Workbook ERP Release — 2026-02-13",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-13.",
+    "date": "2026-02-13",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Update date handling in invoice data grid and manual transaction form",
+      "Enhance invoice calculations and debugging for balance due",
+      "Add clear selection button to InvoicePopover component"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update date handling in invoice data grid and manual transaction form",
+          "Enhance invoice calculations and debugging for balance due",
+          "Add clear selection button to InvoicePopover component"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-12",
+    "title": "Workbook ERP Release — 2026-02-12",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-12.",
+    "date": "2026-02-12",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Update navigation titles for clarity in sales section"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update navigation titles for clarity in sales section"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-11",
+    "title": "Workbook ERP Release — 2026-02-11",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-11.",
+    "date": "2026-02-11",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add payment date selection to RecordBillPaymentSheet and RecordInvoicePaymentSheet components",
+      "Add default AR/AP account selection logic in InvoiceBusinessConfigSection and BillTemplateEditor",
+      "Fetch default AR/AP accounts and update form handling in ContactCreateForm"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add payment date selection to RecordBillPaymentSheet and RecordInvoicePaymentSheet components",
+          "Add default AR/AP account selection logic in InvoiceBusinessConfigSection and BillTemplateEditor",
+          "Fetch default AR/AP accounts and update form handling in ContactCreateForm",
+          "Add modal support and max height to ContactCreateForm component"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update cash bank column balance display logic to handle missing conversion amounts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-09",
+    "title": "Workbook ERP Release — 2026-02-09",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-09.",
+    "date": "2026-02-09",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add bill report functionality with export options and UI updates",
+      "Add bill report functionality with export options and UI updates"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add bill report functionality with export options and UI updates",
+          "Add bill report functionality with export options and UI updates"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-07",
+    "title": "Workbook ERP Release — 2026-02-07",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-07.",
+    "date": "2026-02-07",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Integrate ApiErrorAlert for reconciliation error handling in CashRegisterDetailView",
+      "Integrate ApiErrorAlert for reconciliation error handling in CashRegisterDetailView"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Integrate ApiErrorAlert for reconciliation error handling in CashRegisterDetailView",
+          "Integrate ApiErrorAlert for reconciliation error handling in CashRegisterDetailView"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-06",
+    "title": "Workbook ERP Release — 2026-02-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-06.",
+    "date": "2026-02-06",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add ApiErrorAlert component and integrate error handling in ReconciliationSheet",
+      "Add invoice report types and export utilities for PDF and Excel"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add ApiErrorAlert component and integrate error handling in ReconciliationSheet",
+          "Add invoice report types and export utilities for PDF and Excel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-05",
+    "title": "Workbook ERP Release — 2026-02-05",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-05.",
+    "date": "2026-02-05",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add RecordDirectCustomerPaymentSheet component for handling direct customer payments",
+      "Enhance inventory reporting with additional fields and export functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add RecordDirectCustomerPaymentSheet component for handling direct customer payments",
+          "Enhance inventory reporting with additional fields and export functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-04",
+    "title": "Workbook ERP Release — 2026-02-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-04.",
+    "date": "2026-02-04",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance currency input to limit decimal points and preserve trailing decimals"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance currency input to limit decimal points and preserve trailing decimals"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-03",
+    "title": "Workbook ERP Release — 2026-02-03",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-03.",
+    "date": "2026-02-03",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Rename transactions to journals across the dashboard for consistency",
+      "Optimize tenant and branch ID initialization and reduce polling interval for performance"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Rename transactions to journals across the dashboard for consistency",
+          "Optimize tenant and branch ID initialization and reduce polling interval for performance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-02-02",
+    "title": "Workbook ERP Release — 2026-02-02",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-02-02.",
+    "date": "2026-02-02",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add utility functions for exporting aged payables to PDF and Excel"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add utility functions for exporting aged payables to PDF and Excel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-30",
+    "title": "Workbook ERP Release — 2026-01-30",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-30.",
+    "date": "2026-01-30",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Update financial reports and exports",
+      "Remove unnecessary class from Balance Sheet detailed view",
+      "Update Inventory Movement Summary report to be available"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update financial reports and exports",
+          "Remove unnecessary class from Balance Sheet detailed view",
+          "Update Inventory Movement Summary report to be available",
+          "Update inventory snapshot dialog to use product and location names",
+          "Update Balance Sheet report to not be marked as coming soon",
+          "Mark financial and inventory reports as coming soon"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-29",
+    "title": "Workbook ERP Release — 2026-01-29",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-29.",
+    "date": "2026-01-29",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add Save Inventory Snapshot dialog component"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add Save Inventory Snapshot dialog component"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-27",
+    "title": "Workbook ERP Release — 2026-01-27",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-27.",
+    "date": "2026-01-27",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Introduce Balance Sheet Reporting UI and enhance financial report components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Introduce Balance Sheet Reporting UI and enhance financial report components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-24",
+    "title": "Workbook ERP Release — 2026-01-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-24.",
+    "date": "2026-01-24",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Introduce Balance Sheet Reporting UI and enhance financial report components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Introduce Balance Sheet Reporting UI and enhance financial report components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-19",
+    "title": "Workbook ERP Release — 2026-01-19",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-19.",
+    "date": "2026-01-19",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement comprehensive financial reporting system with UI/UX specifications",
+      "Fix build errors"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement comprehensive financial reporting system with UI/UX specifications"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Fix build errors"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-18",
+    "title": "Workbook ERP Release — 2026-01-18",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-18.",
+    "date": "2026-01-18",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add comprehensive Sales Analytics and Invoice Update documentation"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add comprehensive Sales Analytics and Invoice Update documentation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-15",
+    "title": "Workbook ERP Release — 2026-01-15",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-15.",
+    "date": "2026-01-15",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add Negative Opening Balance feature and enhance invoice handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add Negative Opening Balance feature and enhance invoice handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-14",
+    "title": "Workbook ERP Release — 2026-01-14",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-14.",
+    "date": "2026-01-14",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Introduce Direct Customer Payment feature with opening balance and invoice allocation"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Introduce Direct Customer Payment feature with opening balance and invoice allocation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-13",
+    "title": "Workbook ERP Release — 2026-01-13",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-13.",
+    "date": "2026-01-13",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Clean up console logging in region-related components",
+      "Improve country parameter handling in getRegions function",
+      "Enhance UI styling and improve region handling"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Clean up console logging in region-related components",
+          "Improve country parameter handling in getRegions function",
+          "Enhance UI styling and improve region handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-12",
+    "title": "Workbook ERP Release — 2026-01-12",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-12.",
+    "date": "2026-01-12",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Improve region fetching and debugging capabilities",
+      "Enhance logging for region fetching and handling",
+      "Implement multi-currency support in statements"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Improve region fetching and debugging capabilities",
+          "Enhance logging for region fetching and handling",
+          "Implement multi-currency support in statements",
+          "Implement void functionality for fixed assets"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update region fetching to use country codes",
+          "Streamline region fetching warnings and enable conditions",
+          "Improve region fetching logging and error handling",
+          "Streamline country handling in contact and location forms",
+          "Enhance region selection in contact and location forms"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-09",
+    "title": "Workbook ERP Release — 2026-01-09",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-09.",
+    "date": "2026-01-09",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Update invoice preview and template for improved layout and functionality"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update invoice preview and template for improved layout and functionality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-08",
+    "title": "Workbook ERP Release — 2026-01-08",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-08.",
+    "date": "2026-01-08",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add customer and supplier statement download functionality",
+      "Add environment variable for server actions encryption key",
+      "Enhance layout and overflow handling in user role update dialog"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add customer and supplier statement download functionality",
+          "Add environment variable for server actions encryption key",
+          "Enhance layout and overflow handling in user role update dialog",
+          "Enhance user role management and user listing functionality",
+          "Improve event handling to prevent dialog dismissal when interacting with toast fix(invitation-columns): add whitespace-nowrap class to branch display for better formatting",
+          "Add inactivity timer with session timeout dialog"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Comment out no-change check in patchContact function"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Contact and bills update",
+          "Contact update",
+          "Update stale time for currency cache and improve currency ID handling in forms",
+          "Avoid race conditions between effects in production builds on updating contact",
+          "Contact update",
+          "Contact update"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-07",
+    "title": "Workbook ERP Release — 2026-01-07",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-07.",
+    "date": "2026-01-07",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add comprehensive implementation documentation for inactivity timer",
+      "Implement inactivity timer with localStorage persistence",
+      "Add whitespace-nowrap class to stock taking columns for better layout"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add comprehensive implementation documentation for inactivity timer",
+          "Implement inactivity timer with localStorage persistence",
+          "Add whitespace-nowrap class to stock taking columns for better layout",
+          "Comment out Add Stock Location button in BatchDetailView",
+          "Enhance account type configuration with Solar Bold Duotone icons and update badge styling",
+          "Add reconciliation functionality and enhance account management in inventory and accounts sections",
+          "Add 'overdue' and 'paid' status options to invoice selection and update status handling",
+          "Update branch form and popover to handle branch creation and selection",
+          "Enable customer filtering in InvoiceHeaderSection"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Initial plan",
+          "Update OTP handling and remove VerifyOTPView component",
+          "Update stock location selector in InvoiceTemplateEditor for improved UX",
+          "Enhance contact actions with optional user session handling and base URL utility",
+          "Simplify response structure for regions and cities actions",
+          "Remove unused ContactsAnalytics component and improve loading state for tax groups in ProductForm",
+          "Refactor location-related actions and components"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Comment out ForcePasswordChangeWrapper in DashboardLayout for cleaner code",
+          "Adjust layout for stock location selector and set fixed height for settings tabs scroll area",
+          "Update organization selection logic to include name comparison",
+          "Handle paginated response format for regions and cities API"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-06",
+    "title": "Workbook ERP Release — 2026-01-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-06.",
+    "date": "2026-01-06",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enhance UI with tooltips for better user guidance and update invitation handling logic",
+      "Add shadcn tooltips to StatusIcon components for accessibility",
+      "Add invite user functionality to team hub and prevent double submission"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance UI with tooltips for better user guidance and update invitation handling logic",
+          "Add shadcn tooltips to StatusIcon components for accessibility",
+          "Add invite user functionality to team hub and prevent double submission",
+          "Enhance contacts UI with balance status and interactive elements",
+          "Add loading skeleton components for various dashboard sections",
+          "Consolidate estimate preview functionality and enhance error handling"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Changed data format to fit backend data format update",
+          "WIP: Settings tabs",
+          "Remove unused components and contexts related to transactions and users",
+          "Update tooltip text to be more descriptive based on code review",
+          "Extract error message constant to avoid duplication",
+          "Simplify error handling in invite-user-sheet",
+          "Migrate invite-user-sheet to SuccessButton pattern",
+          "Initial plan",
+          "Initial plan",
+          "DOCUMENTATION",
+          "Replace router.push with Link component for navigation in GoodsReceiveDetailPage, InvitePageContent, and CashRegisterDetailView",
+          "Streamline error and success handling in AuthErrorBanner component",
+          "Reorder imports and improve dynamic imports across multiple pages",
+          "Refactor delivery and invoice handling; update discount types"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Reorder import statements for consistency in goods receives page",
+          "Update loading skeletons for dynamic imports in goods receives and inventory listing components",
+          "Manage organization switching state and improve loading message",
+          "Remove unnecessary whitespace in handleSubmit function",
+          "Standardize formatting and improve readability in contacts columns component",
+          "Correct indentation and formatting in TransferFundsForm component",
+          "Update loading components to use full width for better layout consistency"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-05",
+    "title": "Workbook ERP Release — 2026-01-05",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-05.",
+    "date": "2026-01-05",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement getEnvVariable function for environment variable management fix: update AUTH_BASE_URL and AUTH_API_KEY usage to use getEnvVariable feat: add partially applied status to credit note actions fix: adjust aging item width in PDF statement fix: update current aging amount calculation in statement table",
+      "Add global location support for invoices and batch filtering",
+      "Implement invoice actions cell with PDF download functionality"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement getEnvVariable function for environment variable management fix: update AUTH_BASE_URL and AUTH_API_KEY usage to use getEnvVariable feat: add partially applied status to credit note actions fix: adjust aging item width in PDF statement fix: update current aging amount calculation in statement table",
+          "Add global location support for invoices and batch filtering",
+          "Implement invoice actions cell with PDF download functionality",
+          "Billing address id  update",
+          "Enhance location management with address override and expiry status utilities"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Reorganize imports and improve downloadReport function structure",
+          "Remove unused invoice detail layout and page components",
+          "Remove shipment kanban and listing components"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Fixes",
+          "Fixes"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-04",
+    "title": "Workbook ERP Release — 2026-01-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-04.",
+    "date": "2026-01-04",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Update batch action buttons for improved functionality and styling",
+      "Enhance inventory and payment features",
+      "Enhance button labels and add tooltips for better user guidance"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update batch action buttons for improved functionality and styling",
+          "Enhance inventory and payment features",
+          "Enhance button labels and add tooltips for better user guidance"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Enhance settings layout with new components and update avatar display in batch columns",
+          "Refactor line item handling across credit notes, estimates, invoices, refund receipts, and sales orders",
+          "Refactor line item handling across multiple features to unify input structure"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Restore import for BdArrowRightUp icon in batch-columns component",
+          "Remove unused imports and comment out download functionality in expense data grid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-03",
+    "title": "Workbook ERP Release — 2026-01-03",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-03.",
+    "date": "2026-01-03",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add shipment kanban and listing table components",
+      "Add tax group and tax configuration management components",
+      "Enhance invoice and bill templates with packaging fields"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add shipment kanban and listing table components",
+          "Add tax group and tax configuration management components",
+          "Enhance invoice and bill templates with packaging fields",
+          "Add include_void parameter to filter transactions"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove fulfillment form, shipment listing table, and shipment types",
+          "Clean up imports and improve packaging quantity handling in payment template",
+          "Refactor BillsListing component to streamline bill loading logic and enhance payment template with packaging functionality",
+          "Streamline state management and loading logic in BillsListing component"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update stock display to show available stock directly in packaging columns"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-02",
+    "title": "Workbook ERP Release — 2026-01-02",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-02.",
+    "date": "2026-01-02",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enhance shipment table API with additional handlers and improve error extraction",
+      "Standardize code formatting and improve readability across components",
+      "Improve code formatting and readability across components"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance shipment table API with additional handlers and improve error extraction"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Standardize code formatting and improve readability across components",
+          "Improve code formatting and readability across components",
+          "Standardize code formatting and improve readability in sales order components",
+          "Improve layout and loading components for better clarity and user experience",
+          "Refactor sales order status integration and implementation documentation",
+          "Streamline imports and improve formatting in ChartOfAccountsPopover component"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update last_reconciled_balance to allow null values"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-01-01",
+    "title": "Workbook ERP Release — 2026-01-01",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2026-01-01.",
+    "date": "2026-01-01",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add fixed asset summary cards and table components",
+      "Add shipment listing table and related components",
+      "Enhance reconciliation forms and reports with improved balance handling and UI updates"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add fixed asset summary cards and table components",
+          "Add shipment listing table and related components",
+          "Enhance reconciliation forms and reports with improved balance handling and UI updates"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Clean up whitespace and improve formatting in shipment detail sheet"
         ]
       }
     ]
