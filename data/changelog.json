@@ -1,8 +1,8 @@
 [
   {
     "id": "rel-2026-09-21",
-    "title": "Add insights tabs and analytics components",
-    "description": "Shipped 4 updates across transactions, purchases, Sales Insights, with stability and workflow enhancements.",
+    "title": "Redesign contact detail sheet with activity tab and char",
+    "description": "Shipped 5 updates across prepayments, contacts, pdf, with stability and workflow enhancements.",
     "date": "2026-09-21",
     "tags": [
       "Features",
@@ -10,28 +10,29 @@
       "Fixes"
     ],
     "highlights": [
-      "Add insights tabs and analytics components",
-      "Add sales panels and refactor analytics request logic",
-      "Standardize spelling of ageing to aging across UI and docs"
+      "Redesign contact detail sheet with activity tab and char",
+      "Add hover tooltips to donut ring and segmented track",
+      "Replace hardcoded blue styles with brand variables"
     ],
     "sections": [
       {
         "heading": "✨ New Features",
         "items": [
-          "Add insights tabs and analytics components",
-          "Add sales panels and refactor analytics request logic"
+          "Redesign contact detail sheet with activity tab and char",
+          "Add hover tooltips to donut ring and segmented track"
         ]
       },
       {
         "heading": "⚡ Improvements",
         "items": [
+          "Replace hardcoded blue styles with brand variables",
           "Standardize spelling of ageing to aging across UI and docs"
         ]
       },
       {
         "heading": "🐛 Bug Fixes",
         "items": [
-          "Prevent editing system-generated transactions"
+          "Format numbers and currency in thermal pdf templates"
         ]
       }
     ]
