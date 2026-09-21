@@ -23,9 +23,16 @@ export function SiteHeader() {
               priority
               className="h-6 w-auto object-contain"
             />
-            <span className="text-base font-extrabold tracking-wider uppercase">
-              WORKBOOK
-            </span>
+            {/* <span className="text-base font-extrabold tracking-wider uppercase">
+              Workbook
+            </span> */}
+             <div className='ml-1 flex flex-col gap-0.5 leading-none group-data-[collapsible=icon]:hidden dark:ml-2'>
+                <span
+                  className='truncate bg-(image:--brand-logo-gradient) bg-clip-text text-2xl font-semibold text-transparent dark:bg-none dark:text-white'
+                >
+                  Workbook
+                </span>
+              </div>
           </Link>
 
           {/* Navigation Links */}
