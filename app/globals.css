@@ -99,6 +99,16 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --brand-logo-gradient: linear-gradient(
+    to bottom,
+    #24357c 0%,
+    #24387f 23%,
+    #254287 41%,
+    #265396 57%,
+    #276baa 73%,
+    #2889c5 88%,
+    #2aa9e0 100%
+  );
 }
 
 .dark {
