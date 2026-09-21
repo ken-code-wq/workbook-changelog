@@ -15,188 +15,192 @@ interface TimelineScrubberProps {
   items: ChangelogTimelineItem[]
 }
 
+const MAX_TICKS = 44
+const TICK_GAP = 8 // px between tick centers
+
 export function TimelineScrubber({ items }: TimelineScrubberProps) {
-  const [activeIndex, setActiveIndex] = React.useState(0)
+  const [visibleIds, setVisibleIds] = React.useState<Set<string>>(new Set())
   const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null)
   const [isDragging, setIsDragging] = React.useState(false)
-  const trackRef = React.useRef<HTMLDivElement>(null)
+  const railRef = React.useRef<HTMLDivElement>(null)
 
-  // Track active item based on scroll position
+  const tickCount = Math.min(MAX_TICKS, items.length)
+  const railHeight = Math.max(0, (tickCount - 1) * TICK_GAP)
+
+  // Each tick represents a contiguous bucket of entries
+  const ticks = React.useMemo(
+    () =>
+      Array.from({ length: tickCount }, (_, i) => {
+        const start = Math.floor((i * items.length) / tickCount)
+        const end = Math.floor(((i + 1) * items.length) / tickCount)
+        return { start, end }
+      }),
+    [items.length, tickCount]
+  )
+
+  const tickForIndex = (index: number) =>
+    Math.min(tickCount - 1, Math.floor((index * tickCount) / items.length))
+
+  // Track which entries are currently on screen
   React.useEffect(() => {
-    const handleScroll = () => {
-      if (isDragging) return
-      const scrollPosition = window.scrollY + 180
-
-      for (let i = 0; i < items.length; i++) {
-        const el = document.getElementById(items[i].id)
-        if (el) {
-          const top = el.offsetTop
-          const bottom = top + el.offsetHeight
-          if (scrollPosition >= top && scrollPosition < bottom) {
-            setActiveIndex(i)
-            break
+    const observer = new IntersectionObserver(
+      (entries) => {
+        setVisibleIds((prev) => {
+          const next = new Set(prev)
+          for (const entry of entries) {
+            if (entry.isIntersecting) next.add(entry.target.id)
+            else next.delete(entry.target.id)
           }
-        }
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll, { passive: true })
-    handleScroll()
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [items, isDragging])
-
-  // Navigate to an entry
-  const scrollToItem = (index: number) => {
-    if (index < 0 || index >= items.length) return
-    setActiveIndex(index)
-    const target = document.getElementById(items[index].id)
-    if (target) {
-      const topOffset = target.getBoundingClientRect().top + window.scrollY - 100
-      window.scrollTo({ top: topOffset, behavior: "smooth" })
-    }
-  }
-
-  // Calculate index from mouse/touch Y position
-  const getIndexFromPointer = (clientY: number) => {
-    if (!trackRef.current) return 0
-    const rect = trackRef.current.getBoundingClientRect()
-    const clampedY = Math.max(0, Math.min(clientY - rect.top, rect.height))
-    const ratio = clampedY / rect.height
-    const index = Math.min(
-      items.length - 1,
-      Math.max(0, Math.round(ratio * (items.length - 1)))
+          return next
+        })
+      },
+      { rootMargin: "-80px 0px -10% 0px" }
     )
-    return index
-  }
 
-  const handlePointerDown = (e: React.PointerEvent) => {
-    setIsDragging(true)
-    const index = getIndexFromPointer(e.clientY)
-    scrollToItem(index)
-  }
+    for (const item of items) {
+      const el = document.getElementById(item.id)
+      if (el) observer.observe(el)
+    }
+    return () => observer.disconnect()
+  }, [items])
 
+  const scrollToItem = React.useCallback(
+    (index: number) => {
+      const item = items[index]
+      if (!item) return
+      const target = document.getElementById(item.id)
+      if (!target) return
+      const top = target.getBoundingClientRect().top + window.scrollY - 96
+      window.scrollTo({ top, behavior: isDragging ? "auto" : "smooth" })
+    },
+    [items, isDragging]
+  )
+
+  const indexFromPointer = React.useCallback(
+    (clientY: number) => {
+      const rail = railRef.current
+      if (!rail || items.length === 0) return 0
+      const rect = rail.getBoundingClientRect()
+      const ratio = rect.height > 0 ? (clientY - rect.top) / rect.height : 0
+      const clamped = Math.max(0, Math.min(1, ratio))
+      return Math.min(items.length - 1, Math.floor(clamped * items.length))
+    },
+    [items.length]
+  )
+
+  // Drag to scrub
   React.useEffect(() => {
-    const handlePointerMove = (e: PointerEvent) => {
-      if (!isDragging) return
-      const index = getIndexFromPointer(e.clientY)
+    if (!isDragging) return
+    const onMove = (e: PointerEvent) => {
+      const index = indexFromPointer(e.clientY)
+      setHoveredIndex(index)
       scrollToItem(index)
     }
-
-    const handlePointerUp = () => {
-      if (isDragging) setIsDragging(false)
+    const onUp = () => {
+      setIsDragging(false)
+      setHoveredIndex(null)
     }
-
-    if (isDragging) {
-      window.addEventListener("pointermove", handlePointerMove)
-      window.addEventListener("pointerup", handlePointerUp)
-    }
-
+    window.addEventListener("pointermove", onMove)
+    window.addEventListener("pointerup", onUp)
     return () => {
-      window.removeEventListener("pointermove", handlePointerMove)
-      window.removeEventListener("pointerup", handlePointerUp)
+      window.removeEventListener("pointermove", onMove)
+      window.removeEventListener("pointerup", onUp)
     }
-  }, [isDragging, items])
+  }, [isDragging, indexFromPointer, scrollToItem])
 
-  const previewIndex = hoveredIndex ?? activeIndex
-  const previewItem = items[previewIndex]
+  if (tickCount === 0) return null
 
-  // Sampling for ticks (show ~28 ticks max to fit nicely in sidebar)
-  const tickCount = Math.min(32, items.length)
-  const ticks = Array.from({ length: tickCount }, (_, i) => {
-    const mappedIndex = Math.round((i / (tickCount - 1)) * (items.length - 1))
-    return {
-      index: mappedIndex,
-      isMajor: i % 4 === 0,
-    }
-  })
-
-  // Calculate current slider indicator percentage position
-  const activePercent = items.length > 1 ? (activeIndex / (items.length - 1)) * 100 : 0
-  const previewPercent = items.length > 1 ? (previewIndex / (items.length - 1)) * 100 : 0
+  const hoveredTick = hoveredIndex !== null ? tickForIndex(hoveredIndex) : null
+  const previewItem = hoveredIndex !== null ? items[hoveredIndex] : null
+  const previewTitle = previewItem
+    ? previewItem.title.replace(
+        /^Workbook ERP Release — \d{4}-\d{2}-\d{2}$/,
+        previewItem.highlights?.[0] || previewItem.title
+      )
+    : ""
+  const previewBody = previewItem
+    ? previewItem.description ||
+      previewItem.highlights?.join(". ") ||
+      "Product enhancements and bug fixes."
+    : ""
 
   return (
     <aside
       aria-label="Timeline navigation"
-      className="hidden lg:flex fixed left-6 top-1/2 -translate-y-1/2 z-40 select-none items-center"
+      className="fixed left-3 top-1/2 z-40 hidden -translate-y-1/2 select-none lg:block"
     >
-      {/* Ticks rail */}
+      {/* Hit area — generous padding so the rail is easy to catch */}
       <div
-        ref={trackRef}
-        onPointerDown={handlePointerDown}
-        onPointerLeave={() => setHoveredIndex(null)}
-        className="relative py-4 px-3 flex flex-col justify-between h-[360px] cursor-ns-resize group"
+        className="cursor-pointer px-3 py-3"
+        onPointerMove={(e) => {
+          if (!isDragging) setHoveredIndex(indexFromPointer(e.clientY))
+        }}
+        onPointerLeave={() => {
+          if (!isDragging) setHoveredIndex(null)
+        }}
+        onPointerDown={(e) => {
+          e.preventDefault()
+          const index = indexFromPointer(e.clientY)
+          setHoveredIndex(index)
+          setIsDragging(true)
+          scrollToItem(index)
+        }}
       >
-        {/* Rail background hover bar */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-2 bottom-2 w-1.5 rounded-full bg-border/40 group-hover:bg-border/70 transition-colors" />
-
-        {/* Ticks */}
-        {ticks.map((tick, i) => {
-          const isSelected = Math.abs(tick.index - activeIndex) <= Math.max(1, Math.floor(items.length / tickCount / 2))
-          return (
-            <button
-              type="button"
-              key={i}
-              onClick={(e) => {
-                e.stopPropagation()
-                scrollToItem(tick.index)
-              }}
-              onMouseEnter={() => setHoveredIndex(tick.index)}
-              className="relative z-10 flex items-center justify-center p-0.5 focus:outline-none"
-              aria-label={`Scroll to ${items[tick.index]?.date}`}
-            >
-              <div
-                className={`transition-all rounded-full ${
-                  tick.isMajor
-                    ? isSelected
-                      ? "w-4 h-0.5 bg-foreground"
-                      : "w-3 h-0.5 bg-muted-foreground/60 group-hover:bg-muted-foreground"
-                    : isSelected
-                    ? "w-2.5 h-0.5 bg-foreground/80"
-                    : "w-1.5 h-0.5 bg-muted-foreground/30 group-hover:bg-muted-foreground/60"
-                }`}
-              />
-            </button>
-          )
-        })}
-
-        {/* Active position indicator bar */}
-        <div
-          className="absolute left-1/2 -translate-x-1/2 w-5 h-1 bg-primary rounded-full pointer-events-none transition-all duration-75 shadow-sm"
-          style={{ top: `calc(${activePercent}% + 8px)` }}
-        />
+        <div ref={railRef} className="relative w-4" style={{ height: railHeight }}>
+          {ticks.map((tick, i) => {
+            const inView = items
+              .slice(tick.start, tick.end)
+              .some((item) => visibleIds.has(item.id))
+            const isHovered = hoveredTick === i
+            return (
+              <button
+                key={i}
+                type="button"
+                tabIndex={-1}
+                aria-label={`Jump to ${items[tick.start]?.date}`}
+                onClick={() => scrollToItem(tick.start)}
+                className="absolute left-0 flex h-2 -translate-y-1/2 items-center focus:outline-none"
+                style={{ top: i * TICK_GAP }}
+              >
+                <span
+                  className={`block h-[1.5px] rounded-full transition-all duration-150 ease-out ${
+                    isHovered
+                      ? "w-4 bg-foreground"
+                      : inView
+                        ? "w-3 bg-foreground/80"
+                        : "w-2 bg-muted-foreground/30"
+                  }`}
+                />
+              </button>
+            )
+          })}
+        </div>
       </div>
 
-      {/* Floating Preview Card (matching screenshot) */}
-      {previewItem && (
-        <div
-          className="ml-3 transition-all duration-100 ease-out"
-          style={{
-            transform: `translateY(calc(${previewPercent - 50}% * 0.7))`,
-          }}
-        >
-          <div
-            onClick={() => scrollToItem(previewIndex)}
-            className="w-[300px] cursor-pointer rounded-2xl border border-border/70 bg-popover/95 p-4 shadow-xl backdrop-blur-md transition-all hover:border-primary/40 hover:shadow-2xl"
-          >
-            <div className="flex items-center justify-between mb-1.5 gap-2">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-primary">
-                {previewItem.date}
-              </span>
-              <span className="text-[10px] text-muted-foreground">
+      {/* Hover preview — only exists while hovering / scrubbing */}
+      <div
+        aria-hidden={!previewItem}
+        className={`pointer-events-none absolute left-10 w-[300px] -translate-y-1/2 transition-[opacity,transform,top] duration-150 ease-out ${
+          previewItem ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-1"
+        }`}
+        style={{ top: 12 + (hoveredTick ?? 0) * TICK_GAP }}
+      >
+        {previewItem && (
+          <div className="rounded-2xl border border-border/60 bg-popover/90 px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)] backdrop-blur-xl">
+            <div className="flex items-baseline justify-between gap-3">
+              <p className="truncate text-sm font-medium text-foreground">
+                {previewTitle}
+              </p>
+              <span className="shrink-0 text-[11px] text-muted-foreground">
                 {formatDate(new Date(previewItem.date))}
               </span>
             </div>
-
-            <h4 className="text-xs font-bold uppercase tracking-wide text-foreground line-clamp-2 leading-snug">
-              {previewItem.title.replace(/^Workbook ERP Release — \d{4}-\d{2}-\d{2}$/, previewItem.highlights?.[0] || previewItem.title)}
-            </h4>
-
-            <p className="mt-1.5 text-xs text-muted-foreground line-clamp-3 leading-relaxed">
-              {previewItem.description || previewItem.highlights?.join(". ") || "Product enhancements and bug fixes."}
+            <p className="mt-1 line-clamp-2 text-[13px] leading-snug text-muted-foreground">
+              {previewBody}
             </p>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </aside>
   )
 }
