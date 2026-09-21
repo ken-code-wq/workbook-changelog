@@ -15,14 +15,24 @@ export function SiteHeader() {
             rel="noreferrer"
             className="flex items-center gap-2.5 font-bold tracking-tight text-foreground transition-opacity hover:opacity-90"
           >
-            <Image
-              src="/assets/logo_alone.svg"
-              alt="Workbook Logo"
-              width={26}
-              height={26}
-              priority
-              className="h-6 w-auto object-contain"
-            />
+            <div className="relative h-6 w-auto flex items-center">
+              <Image
+                src="/assets/logo_alone.svg"
+                alt="Workbook Logo"
+                width={26}
+                height={26}
+                priority
+                className="h-6 w-auto object-contain dark:hidden"
+              />
+              <Image
+                src="/assets/logo_alone_white.svg"
+                alt="Workbook Logo"
+                width={26}
+                height={26}
+                priority
+                className="h-6 w-auto object-contain hidden dark:block"
+              />
+            </div>
             {/* <span className="text-base font-extrabold tracking-wider uppercase">
               Workbook
             </span> */}
