@@ -1,0 +1,119 @@
+[
+  {
+    "id": "rel-2026-09-21",
+    "title": "Workbook ERP Update — 2026-09-21",
+    "description": "Latest features and system enhancements deployed on 2026-09-21.",
+    "date": "2026-09-21",
+    "version": "v2.5.0",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "media": {
+      "type": "image",
+      "url": "/assets/sales-insights.png",
+      "alt": "Sales insights panel visualization"
+    },
+    "highlights": [
+      "Add sales panels and refactor analytics request logic",
+      "Refine insights and listing components across sales modules",
+      "Enhance analytics charts, trend panels, and receipt insight panels"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add sales panels and refactor analytics request logic",
+          "Refine insights and listing components across sales modules",
+          "Enhance analytics charts, trend panels, and receipt insight panels",
+          "Add segmented-track, split-comparison, stat-bar-chart, and weekday-pattern panels",
+          "Add settings navigation rail and panels for improved user experience",
+          "Add payment method metadata and improve cash sales insights & breakdown",
+          "Modularize sales analytics panels, filter bar, and trend charts",
+          "Update data-grid and add insights empty state component",
+          "Replace status strip's bar with a donut ring",
+          "Promote the ranked-list card to a global component",
+          "Pair invoice insights panels into balanced rows",
+          "Add prepayment insights component and integrate with existing features",
+          "Add new skills for animation and design",
+          "Add list-toolbar and update module-section-tabs spacing",
+          "Enhance settings navigation with preloading for improved performance",
+          "Implement phone and email change dialogs with hooks for managing state and flow"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refine typography, font-mono usage, and cards in CFO dashboard",
+          "Update font-mono guidelines in developer instructions",
+          "Revert \"feat(settings): vertical section rail + horizontal sub-tabs\"",
+          "Rebuild the insights customer panels",
+          "Modularize sales and receipt analytics components and view options"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Standardize sample-data badging in reliable-payers panel",
+          "Remove CashSalesInsights component due to redundancy",
+          "Update grid classes for consistent layout in loading and data states",
+          "Refine layout and insights across credit notes, invoices, and receipts",
+          "Match status-strip column count to tile count, capped at 4",
+          "Remove Register/Insights tabs from the estimates listing",
+          "Fix empty space in invoice status card, drop broken overdue chart",
+          "Restore viewport fallback for custom fields grid",
+          "Resolve import inconsistencies and clean up unused imports in sales orders listing",
+          "Unify spacing and layout across sales page routes",
+          "Standardize spacing and toolbar layout across sales feature listings",
+          "Update button text color for better visibility in approval policy panel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2026-09-18",
+    "title": "Workbook ERP Update — Navigation & Customer Insights",
+    "description": "Added new settings navigation rail, improved cash sales tracking, and upgraded reporting status visualizations.",
+    "date": "2026-09-18",
+    "version": "v2.4.0",
+    "tags": [
+      "UI/UX",
+      "Settings",
+      "Reports"
+    ],
+    "media": {
+      "type": "video",
+      "url": "/demo.mp4",
+      "alt": "Demo walkthrough of navigation rail"
+    },
+    "highlights": [
+      "Streamlined Settings navigation rail for faster administration",
+      "Upgraded status strip reporting charts to interactive donut rings",
+      "Enhanced Cash Sales metadata and payment method breakdown"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Introduced vertical settings section rail for quicker access to organization preferences.",
+          "Rebuilt Customer Insights panels to pair metrics into balanced grid layouts."
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Replaced linear status strips with interactive donut ring visualizations in analytics views.",
+          "Improved payment method metadata tracking in Cash Sales."
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Fixed layout grid spacing in entity groups across loading and active data states.",
+          "Resolved viewport alignment issues in custom fields grid."
+        ]
+      }
+    ]
+  }
+]
