@@ -4899,5 +4899,599 @@
         ]
       }
     ]
+  },
+  {
+    "id": "rel-2025-12-31",
+    "title": "Workbook ERP Release — 2025-12-31",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-31.",
+    "date": "2025-12-31",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance contact balance management and filtering",
+      "Update stock popover to filter by stock name and display name in listing",
+      "Refine sidebar UI and refactor purchase order template with item actions"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance contact balance management and filtering",
+          "Update stock popover to filter by stock name and display name in listing",
+          "Refine sidebar UI and refactor purchase order template with item actions",
+          "Add opening balance toggle and enhance UI for cash register components",
+          "Enhance cash register components with improved currency handling and UI updates"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove unused imports from product variant detail sheet",
+          "Refactor product and service components for improved functionality and UI consistency",
+          "Remove unused date-fns parseISO import from journal entries table component"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-29",
+    "title": "Workbook ERP Release — 2025-12-29",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-29.",
+    "date": "2025-12-29",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Update various components for improved UI and functionality, including renaming settings, enhancing alerts, and adjusting styles"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update various components for improved UI and functionality, including renaming settings, enhancing alerts, and adjusting styles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-28",
+    "title": "Workbook ERP Release — 2025-12-28",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-28.",
+    "date": "2025-12-28",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance invitation and role management with link state handling, add delete role functionality, and improve UI filters",
+      "Update Checkbox component to support asChild prop and improve type definitions"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance invitation and role management with link state handling, add delete role functionality, and improve UI filters"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Update Checkbox component to support asChild prop and improve type definitions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-26",
+    "title": "Workbook ERP Release — 2025-12-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-26.",
+    "date": "2025-12-26",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Migrate branch creation from overlay to sheet, enhance form flexibility with new props, and refactor branch form validation and state management.**"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Migrate branch creation from overlay to sheet, enhance form flexibility with new props, and refactor branch form validation and state management.**"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-24",
+    "title": "Workbook ERP Release — 2025-12-24",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-24.",
+    "date": "2025-12-24",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement error toast pattern for async actions and enhance purchase order error handling",
+      "Update environment variable for auth service and add new inventory movement route",
+      "Refactor ServicesTableApi to use DataGrid and enhance pagination"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement error toast pattern for async actions and enhance purchase order error handling",
+          "Update environment variable for auth service and add new inventory movement route",
+          "Refactor ServicesTableApi to use DataGrid and enhance pagination",
+          "Enhance slideshow component with improved styling and navigation",
+          "Add stock movement detail sheet, type tabs, and movements table",
+          "Add Number Input UX Pattern to improve user experience with numeric inputs",
+          "Refactor goods receive components to support bill management and enhance performance",
+          "Add BillDetailSheet component for detailed bill management",
+          "Add modal prop to FormContainer and update Sheet and Dialog components to support overlay visibility"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Replace `solar-icon-react` icons with `lucide-react` icons in stock detail view."
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Remove unused configuration files and simplify dev script",
+          "Remove redundant newline in copilot instructions",
+          "Standardize number input type quotes for consistency"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-22",
+    "title": "Workbook ERP Release — 2025-12-22",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-22.",
+    "date": "2025-12-22",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Enhance goods receives and purchase orders functionality",
+      "Update onDeleteOrder prop type and add onViewContact prop to PurchaseOrderKanbanCard",
+      "Update onDeleteOrder prop type and add onViewContact prop to PurchaseOrderKanban"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance goods receives and purchase orders functionality",
+          "Update onDeleteOrder prop type and add onViewContact prop to PurchaseOrderKanbanCard",
+          "Update onDeleteOrder prop type and add onViewContact prop to PurchaseOrderKanban",
+          "Update onDeleteOrder prop type and add onViewContact prop to PurchaseOrderKanbanColumn",
+          "Add PurchaseOrderActions component with search and filter functionality",
+          "Implement delete functionality and enhance order detail views",
+          "Add PDF generation for refund receipts and implement document calculations"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Remove unused Link import in PurchaseOrderKanbanCard",
+          "Update onDeleteOrder prop type to accept PurchaseOrderAPIResponse",
+          "Implement delete functionality in PurchaseOrdersListing component",
+          "Update delete order handlers to use PurchaseOrderAPIResponse type",
+          "Simplify status formatting in patchPurchaseOrderStatus function",
+          "Remove unused import for getAllPurchaseOrders"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-17",
+    "title": "Workbook ERP Release — 2025-12-17",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-17.",
+    "date": "2025-12-17",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Update refund receipt handling with new data structure and dynamic components",
+      "Add types and interfaces for refund receipts and related data structures",
+      "Refactor code structure for improved readability and maintainability"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update refund receipt handling with new data structure and dynamic components",
+          "Add types and interfaces for refund receipts and related data structures"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor code structure for improved readability and maintainability"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-12",
+    "title": "Workbook ERP Release — 2025-12-12",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-12.",
+    "date": "2025-12-12",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Update .gitignore and add npm cache logs for better debugging",
+      "Enhance reconciliation sheet with dynamic header height and improve table rendering",
+      "Auto-sync after agent response"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update .gitignore and add npm cache logs for better debugging",
+          "Enhance reconciliation sheet with dynamic header height and improve table rendering"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Auto-sync after agent response",
+          "Auto-sync on project load",
+          "Initial sync after enabling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-11",
+    "title": "Workbook ERP Release — 2025-12-11",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-11.",
+    "date": "2025-12-11",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance ledger source selector with current balance display; remove quick add row component; refactor transaction table and cell actions for improved UX; add default accounts configuration actions",
+      "Enhance dropdown functionality to close on action selection",
+      "Add void bill functionality with confirmation dialog"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance ledger source selector with current balance display; remove quick add row component; refactor transaction table and cell actions for improved UX; add default accounts configuration actions",
+          "Enhance dropdown functionality to close on action selection",
+          "Add void bill functionality with confirmation dialog",
+          "Integrate fetchWithAuthRefresh for payment actions and enhance payment status handling",
+          "Udpate cash register detail view"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-10",
+    "title": "Workbook ERP Release — 2025-12-10",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-10.",
+    "date": "2025-12-10",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Update transaction detal view",
+      "Update transaction table",
+      "Improve button visibility logic for reconciled and unreconciled items"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update transaction detal view",
+          "Update transaction table",
+          "Improve button visibility logic for reconciled and unreconciled items",
+          "Implement bulk actions for marking items as cleared and uncleared",
+          "Update welcome page",
+          "Add architecture documentation for PDF generation process",
+          "Add reconciliation sheet component for cash and bank account reconciliation"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor code structure and remove redundant code blocks for improved readability and maintainability"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-09",
+    "title": "Workbook ERP Release — 2025-12-09",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-09.",
+    "date": "2025-12-09",
+    "tags": [
+      "Fixes"
+    ],
+    "highlights": [
+      "Build errors"
+    ],
+    "sections": [
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Build errors"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-08",
+    "title": "Workbook ERP Release — 2025-12-08",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-08.",
+    "date": "2025-12-08",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Implement void receipt functionality and enhance receipt details view",
+      "Enhance payment and purchase order templates with invoice configuration and billing address features",
+      "Reorganize imports for consistency and readability"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Implement void receipt functionality and enhance receipt details view",
+          "Enhance payment and purchase order templates with invoice configuration and billing address features"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Reorganize imports for consistency and readability"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Remove unused excludeCodes prop from CurrencyForm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-06",
+    "title": "Workbook ERP Release — 2025-12-06",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-06.",
+    "date": "2025-12-06",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Add address carousel and fields components for managing multiple addresses",
+      "Refactor code structure for improved readability and maintainability"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add address carousel and fields components for managing multiple addresses"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor code structure for improved readability and maintainability"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-05",
+    "title": "Workbook ERP Release — 2025-12-05",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-05.",
+    "date": "2025-12-05",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Enhance country selection logic and improve invoice action menu dropdown handling",
+      "Simplify authentication connection error messages"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance country selection logic and improve invoice action menu dropdown handling"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Simplify authentication connection error messages"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-04",
+    "title": "Workbook ERP Release — 2025-12-04",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-04.",
+    "date": "2025-12-04",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add currency field to cash bank account creation and update dependencies",
+      "Update branch management components and improve error logging",
+      "Update dependencies and enhance ContactsOpeningBalancesGrid with dynamic meta handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add currency field to cash bank account creation and update dependencies",
+          "Update branch management components and improve error logging",
+          "Update dependencies and enhance ContactsOpeningBalancesGrid with dynamic meta handling",
+          "Add Branch Management Features",
+          "Add void reason handling for opening balance changes in cash register form",
+          "Add function to set initial cash bank opening balance in cash register form",
+          "Refactor opening balance handling; rename and enhance parameters for initial and update actions",
+          "Enhance branch creation and management with phone input integration; improve branch navigation logic and response handling",
+          "Enhance cash bank account management with opening balance updates and foreign currency support; refactor branch forms to include phone input"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Improve logging format in invoice config actions",
+          "Update .npmrc",
+          "Update .npmrc",
+          "Updates"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Update endpoint for setting initial cash bank opening balance and change method to POST"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-12-02",
+    "title": "Workbook ERP Release — 2025-12-02",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-12-02.",
+    "date": "2025-12-02",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add data grid and listing components for purchase requests"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add data grid and listing components for purchase requests"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-11-30",
+    "title": "Workbook ERP Release — 2025-11-30",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-11-30.",
+    "date": "2025-11-30",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Refactor invoice and opportunity components for improved product handling and error checking; update receipt calculations to ensure proper parsing of numeric values; enhance sales order management with better routing and state handling; remove unused mock invitation API and Frigade provider; update compatibility date in wrangler configuration."
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Refactor invoice and opportunity components for improved product handling and error checking; update receipt calculations to ensure proper parsing of numeric values; enhance sales order management with better routing and state handling; remove unused mock invitation API and Frigade provider; update compatibility date in wrangler configuration."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-11-29",
+    "title": "Workbook ERP Release — 2025-11-29",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-11-29.",
+    "date": "2025-11-29",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance invoice and receipt management with new editor components and unsaved changes handling"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance invoice and receipt management with new editor components and unsaved changes handling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-11-28",
+    "title": "Workbook ERP Release — 2025-11-28",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-11-28.",
+    "date": "2025-11-28",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Add Record Invoice Payment Sheet component for managing invoice payments",
+      "Enhance sales order mock data and types"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add Record Invoice Payment Sheet component for managing invoice payments",
+          "Enhance sales order mock data and types"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-11-26",
+    "title": "Workbook ERP Release — 2025-11-26",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-11-26.",
+    "date": "2025-11-26",
+    "tags": [
+      "Features"
+    ],
+    "highlights": [
+      "Enhance invitation management with bulk actions and confirmation dialogs"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Enhance invitation management with bulk actions and confirmation dialogs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rel-2025-11-25",
+    "title": "Workbook ERP Release — 2025-11-25",
+    "description": "Updates, performance enhancements, and bug fixes deployed on 2025-11-25.",
+    "date": "2025-11-25",
+    "tags": [
+      "Improvements"
+    ],
+    "highlights": [
+      "Initial commit"
+    ],
+    "sections": [
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Initial commit"
+        ]
+      }
+    ]
   }
 ]

@@ -12,8 +12,9 @@ import fs from "fs";
 import path from "path";
 
 const ERP_REPO_PATH = process.env.ERP_REPO_PATH || "/Users/kenneth/workspace/everything_tech/next js/workbook/workbook";
-// Default to full year lookback if FULL_LOOKBACK=true, or if specified by flag
-const FULL_LOOKBACK = process.env.FULL_LOOKBACK === "true";
+// ALL_HISTORY=true scans entire git history from the very first commit
+const ALL_HISTORY = process.env.ALL_HISTORY === "true";
+const FULL_LOOKBACK = process.env.FULL_LOOKBACK === "true" || ALL_HISTORY;
 const HOURS_LOOKBACK = parseInt(process.env.HOURS_LOOKBACK || "5", 10);
 const DATA_FILE = path.resolve(process.cwd(), "data/changelog.json");
 
@@ -47,7 +48,9 @@ function getCommits(repoPath: string): CommitInfo[] {
     }
 
     let sinceFlag = "";
-    if (FULL_LOOKBACK) {
+    if (ALL_HISTORY) {
+      sinceFlag = ""; // No date restriction: entire git history
+    } else if (FULL_LOOKBACK) {
       sinceFlag = `--since="2026-01-01T00:00:00Z"`;
     } else {
       const sinceTime = new Date(Date.now() - HOURS_LOOKBACK * 60 * 60 * 1000).toISOString();
@@ -56,7 +59,7 @@ function getCommits(repoPath: string): CommitInfo[] {
 
     const logOutput = execSync(
       `git log ${sinceFlag} --pretty=format:"%H|%an|%ad|%s" --date=short`,
-      { cwd: repoPath, encoding: "utf8" }
+      { cwd: repoPath, encoding: "utf8", maxBuffer: 10 * 1024 * 1024 }
     ).trim();
 
     if (!logOutput) return [];
@@ -139,8 +142,10 @@ function buildEntryForDate(dateStr: string, dateCommits: CommitInfo[]): Changelo
 
 function run() {
   console.log(`[Changelog Bot] Monitoring ERP repo at: ${ERP_REPO_PATH}`);
-  if (FULL_LOOKBACK) {
-    console.log(`[Changelog Bot] Performing FULL lookback since beginning of 2026...`);
+  if (ALL_HISTORY) {
+    console.log(`[Changelog Bot] Performing COMPLETE history lookback from the first commit...`);
+  } else if (FULL_LOOKBACK) {
+    console.log(`[Changelog Bot] Performing lookback since beginning of 2026...`);
   } else {
     console.log(`[Changelog Bot] Checking commits in the last ${HOURS_LOOKBACK} hours...`);
   }
@@ -161,7 +166,7 @@ function run() {
     groupedByDate[c.date].push(c);
   }
 
-  if (FULL_LOOKBACK) {
+  if (FULL_LOOKBACK || ALL_HISTORY) {
     // Rebuild the complete history
     const allEntries: ChangelogEntry[] = [];
     for (const [dateStr, dateCommits] of Object.entries(groupedByDate)) {
@@ -171,7 +176,7 @@ function run() {
 
     fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
     fs.writeFileSync(DATA_FILE, JSON.stringify(allEntries, null, 2), "utf8");
-    console.log(`[Changelog Bot] Successfully generated ${allEntries.length} individual release dates in: ${DATA_FILE}`);
+    console.log(`[Changelog Bot] Successfully generated ${allEntries.length} individual release dates across full repository history in: ${DATA_FILE}`);
   } else {
     // Incremental merge mode: preserve existing dates in file, only update/insert the dates found in this run
     let existingData: ChangelogEntry[] = [];
