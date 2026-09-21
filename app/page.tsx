@@ -2,12 +2,6 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { formatDate } from "@/lib/utils"
 import changelogData from "@/data/changelog.json"
 
-interface MediaItem {
-  type: "image" | "video"
-  url: string
-  alt?: string
-}
-
 interface ChangelogSection {
   heading: string
   items: string[]
@@ -20,7 +14,6 @@ interface ChangelogEntry {
   date: string
   version?: string
   tags?: string[]
-  media?: MediaItem
   highlights?: string[]
   sections: ChangelogSection[]
 }
@@ -104,25 +97,6 @@ export default function HomePage() {
                           </div>
                         )}
                       </div>
-
-                      {/* Media Display (Assets folder images / videos) */}
-                      {changelog.media && (
-                        <div className="rounded-xl overflow-hidden border border-border/80 bg-muted/20 my-4">
-                          {changelog.media.type === "video" ? (
-                            <video
-                              src={changelog.media.url}
-                              controls
-                              className="w-full h-auto max-h-[420px] object-cover"
-                            />
-                          ) : (
-                            <img
-                              src={changelog.media.url}
-                              alt={changelog.media.alt || changelog.title}
-                              className="w-full h-auto max-h-[420px] object-cover"
-                            />
-                          )}
-                        </div>
-                      )}
 
                       {/* Sections */}
                       <div className="space-y-6 pt-2">
