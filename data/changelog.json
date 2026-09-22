@@ -1,5 +1,133 @@
 [
   {
+    "id": "rel-2026-09-22",
+    "title": "Add supplier filter to bills and fix customer filter",
+    "description": "Shipped 8 updates across Analytics & Reporting, Invoice Management, with stability and workflow enhancements.",
+    "date": "2026-09-22",
+    "tags": [
+      "Features",
+      "Fixes"
+    ],
+    "highlights": [
+      "Add supplier filter to bills and fix customer filter",
+      "Implement void functionality for stock adjustments",
+      "Support date ranges in date and due date filters"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Add supplier filter to bills and fix customer filter",
+          "Implement void functionality for stock adjustments"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Support date ranges in date and due date filters"
+        ]
+      }
+    ],
+    "devStats": {
+      "commitCount": 8,
+      "prCount": 4,
+      "filesChanged": 22,
+      "additions": 1503,
+      "deletions": 282,
+      "authors": [
+        "Victor Tetteh Ganoh Ahumah",
+        "Kenneth Ben-Boulo",
+        "Victor Tetteh-Ganoh Ahumah"
+      ],
+      "topCommits": [
+        {
+          "shortHash": "de19d5cf",
+          "hash": "de19d5cf8465dbbc2614b7d3703561493e0bbc33",
+          "message": "Merge pull request #310 from everythingtechnologies/t3code/fix-invoice-date-range-filters",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 310,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/de19d5cf8465dbbc2614b7d3703561493e0bbc33"
+        },
+        {
+          "shortHash": "93635ff6",
+          "hash": "93635ff641b5b6e96a1417510661d5666e8f5726",
+          "message": "Merge branch 'main' into t3code/fix-invoice-date-range-filters",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/93635ff641b5b6e96a1417510661d5666e8f5726"
+        },
+        {
+          "shortHash": "5fd3d0c8",
+          "hash": "5fd3d0c84cdc49e167788fa818cf3fe19f9cfbaf",
+          "message": "Merge pull request #312 from everythingtechnologies/t3code/add-supplier-filter-fix-customer-filter",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 312,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/5fd3d0c84cdc49e167788fa818cf3fe19f9cfbaf"
+        },
+        {
+          "shortHash": "fefcd708",
+          "hash": "fefcd708b7f4895f472965358d9607badfd99f56",
+          "message": "Merge pull request #309 from everythingtechnologies/fix/auth-image-flicker",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 309,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/fefcd708b7f4895f472965358d9607badfd99f56"
+        },
+        {
+          "shortHash": "bbd34e3f",
+          "hash": "bbd34e3f172d152cca168edcefeba82e5414ea97",
+          "message": "feat(analytics): add supplier filter to bills and fix customer filter",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 4,
+          "additions": 259,
+          "deletions": 19,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/bbd34e3f172d152cca168edcefeba82e5414ea97"
+        },
+        {
+          "shortHash": "34275efa",
+          "hash": "34275efaf635143e170ef2fd82c64016b2e4efdf",
+          "message": "Merge pull request #311 from everythingtechnologies/chore/stock-adjustement-void",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 311,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/34275efaf635143e170ef2fd82c64016b2e4efdf"
+        },
+        {
+          "shortHash": "a834ed81",
+          "hash": "a834ed8151935e4f3808093728617d3a3571b2e9",
+          "message": "feat: implement void functionality for stock adjustments",
+          "author": "Victor Tetteh-Ganoh Ahumah",
+          "filesChanged": 17,
+          "additions": 1175,
+          "deletions": 221,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/a834ed8151935e4f3808093728617d3a3571b2e9"
+        },
+        {
+          "shortHash": "e77ff071",
+          "hash": "e77ff071bb435a8c2fd95c31ee9f266b42abf883",
+          "message": "fix(invoices): support date ranges in date and due date filters",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 1,
+          "additions": 69,
+          "deletions": 42,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/e77ff071bb435a8c2fd95c31ee9f266b42abf883"
+        }
+      ]
+    }
+  },
+  {
     "id": "rel-2026-09-21",
     "title": "Redesign contact detail sheet with activity tab and char",
     "description": "Shipped 17 updates across Prepayments, Contacts & Debtors, PDF Reporting, with stability and workflow enhancements.",
