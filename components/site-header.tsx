@@ -2,17 +2,18 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { siteConfig } from "@/lib/site"
-import { useDevMode } from "@/components/dev-mode-context"
-import { Terminal } from "lucide-react"
+import { GitGraph, Sparkles } from "lucide-react"
 
 export function SiteHeader() {
-  const { isDevMode, toggleDevMode } = useDevMode()
+  const pathname = usePathname()
+  const isDev = pathname === "/dev"
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex h-14 items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex h-14 items-center justify-between">
         {/* Left: Brand Logo & Title */}
         <div className="flex items-center gap-6">
           <Link
@@ -74,34 +75,49 @@ export function SiteHeader() {
             </Link>
             <Link
               href="/"
-              className="font-semibold text-foreground"
+              className={`flex items-center gap-1.5 transition-colors ${
+                !isDev ? "font-semibold text-foreground" : "hover:text-foreground"
+              }`}
             >
-              Changelog
+              <Sparkles className="size-3" />
+              <span>Changelog</span>
+            </Link>
+            <Link
+              href="/dev"
+              className={`flex items-center gap-1.5 transition-colors ${
+                isDev ? "font-semibold text-emerald-500" : "hover:text-foreground"
+              }`}
+            >
+              <GitGraph className="size-3" />
+              <span>Dev Studio</span>
             </Link>
           </nav>
         </div>
 
         {/* Right: Actions */}
         <div className="flex items-center gap-2.5 sm:gap-3">
-          {/* Developer Mode Switch */}
-          <button
-            type="button"
-            onClick={toggleDevMode}
-            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono font-medium transition-all cursor-pointer ${
-              isDevMode
-                ? "bg-emerald-500/15 text-emerald-500 border border-emerald-500/40 shadow-sm"
-                : "border border-border text-muted-foreground hover:text-foreground hover:bg-muted"
+          {/* Dedicated Dev Page Quick Switch */}
+          <Link
+            href={isDev ? "/" : "/dev"}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono font-medium transition-all ${
+              isDev
+                ? "bg-foreground text-background shadow-sm"
+                : "border border-border/80 text-muted-foreground hover:text-foreground hover:bg-muted/70"
             }`}
-            title="Toggle Developer Telemetry Mode (Commits, PRs, Branches)"
           >
-            <Terminal className="size-3.5" />
-            <span className="hidden sm:inline">Dev Mode</span>
-            <span
-              className={`size-1.5 rounded-full ${
-                isDevMode ? "bg-emerald-500 animate-pulse" : "bg-muted-foreground/40"
-              }`}
-            />
-          </button>
+            {isDev ? (
+              <>
+                <Sparkles className="size-3" />
+                <span>Public View</span>
+              </>
+            ) : (
+              <>
+                <GitGraph className="size-3.5 text-emerald-500" />
+                <span>Dev Mode</span>
+                <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              </>
+            )}
+          </Link>
 
           <ThemeToggle />
 
