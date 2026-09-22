@@ -2,7 +2,7 @@
   {
     "id": "rel-2026-09-21",
     "title": "Redesign contact detail sheet with activity tab and char",
-    "description": "Shipped 5 updates across prepayments, contacts, pdf, with stability and workflow enhancements.",
+    "description": "Shipped 7 updates across prepayments, contacts, pdf, with stability and workflow enhancements.",
     "date": "2026-09-21",
     "tags": [
       "Features",
@@ -12,14 +12,15 @@
     "highlights": [
       "Redesign contact detail sheet with activity tab and char",
       "Add hover tooltips to donut ring and segmented track",
-      "Replace hardcoded blue styles with brand variables"
+      "Add insights tabs and analytics components"
     ],
     "sections": [
       {
         "heading": "✨ New Features",
         "items": [
           "Redesign contact detail sheet with activity tab and char",
-          "Add hover tooltips to donut ring and segmented track"
+          "Add hover tooltips to donut ring and segmented track",
+          "Add insights tabs and analytics components"
         ]
       },
       {
@@ -32,7 +33,8 @@
       {
         "heading": "🐛 Bug Fixes",
         "items": [
-          "Format numbers and currency in thermal pdf templates"
+          "Format numbers and currency in thermal pdf templates",
+          "Prevent editing system-generated transactions"
         ]
       }
     ]
