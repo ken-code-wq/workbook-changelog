@@ -1,9 +1,15 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { siteConfig } from "@/lib/site"
+import { useDevMode } from "@/components/dev-mode-context"
+import { Terminal } from "lucide-react"
 
 export function SiteHeader() {
+  const { isDevMode, toggleDevMode } = useDevMode()
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex h-14 items-center justify-between">
@@ -33,16 +39,11 @@ export function SiteHeader() {
                 className="h-6 w-auto object-contain hidden dark:block"
               />
             </div>
-            {/* <span className="text-base font-extrabold tracking-wider uppercase">
-              Workbook
-            </span> */}
-             <div className='ml-1 flex flex-col gap-0.5 leading-none group-data-[collapsible=icon]:hidden dark:ml-2'>
-                <span
-                  className='truncate bg-(image:--brand-logo-gradient) bg-clip-text text-2xl font-semibold text-transparent dark:bg-none dark:text-white'
-                >
-                  Workbook
-                </span>
-              </div>
+            <div className="ml-1 flex flex-col gap-0.5 leading-none">
+              <span className="text-xl font-bold tracking-tight text-foreground">
+                Workbook
+              </span>
+            </div>
           </Link>
 
           {/* Navigation Links */}
@@ -81,7 +82,27 @@ export function SiteHeader() {
         </div>
 
         {/* Right: Actions */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          {/* Developer Mode Switch */}
+          <button
+            type="button"
+            onClick={toggleDevMode}
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono font-medium transition-all cursor-pointer ${
+              isDevMode
+                ? "bg-emerald-500/15 text-emerald-500 border border-emerald-500/40 shadow-sm"
+                : "border border-border text-muted-foreground hover:text-foreground hover:bg-muted"
+            }`}
+            title="Toggle Developer Telemetry Mode (Commits, PRs, Branches)"
+          >
+            <Terminal className="size-3.5" />
+            <span className="hidden sm:inline">Dev Mode</span>
+            <span
+              className={`size-1.5 rounded-full ${
+                isDevMode ? "bg-emerald-500 animate-pulse" : "bg-muted-foreground/40"
+              }`}
+            />
+          </button>
+
           <ThemeToggle />
 
           <Link
@@ -97,7 +118,7 @@ export function SiteHeader() {
             href={siteConfig.links.contactSales}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-muted"
+            className="hidden md:inline-flex items-center justify-center rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-muted"
           >
             Contact sales
           </Link>
