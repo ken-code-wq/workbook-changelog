@@ -1,5 +1,324 @@
 [
   {
+    "id": "rel-2026-09-26",
+    "title": "Product Updates — September 26, 2026",
+    "description": "Performance optimizations, workflow refinements, and bug fixes across Workbook ERP.",
+    "date": "2026-09-26",
+    "tags": [
+      "Update"
+    ],
+    "highlights": [],
+    "sections": [],
+    "devStats": {
+      "commitCount": 1,
+      "prCount": 1,
+      "filesChanged": 0,
+      "additions": 0,
+      "deletions": 0,
+      "authors": [
+        "Kenneth Ben-Boulo"
+      ],
+      "topCommits": [
+        {
+          "shortHash": "97dad089",
+          "hash": "97dad0896eccd2ea5a2bdf1c68ab55557fc7ede7",
+          "message": "Merge pull request #326 from everythingtechnologies/feat/delete-project-overview-milestones",
+          "author": "Kenneth Ben-Boulo",
+          "prNumber": 326,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/97dad0896eccd2ea5a2bdf1c68ab55557fc7ede7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rel-2026-09-25",
+    "title": "Allow deleting milestones from project overview",
+    "description": "Shipped 7 updates across projects, Inventory Management, with stability and workflow enhancements.",
+    "date": "2026-09-25",
+    "tags": [
+      "Features",
+      "Improvements",
+      "Fixes"
+    ],
+    "highlights": [
+      "Allow deleting milestones from project overview",
+      "Allow deleting empty project group from empty state",
+      "Redesign transfer detail sheet"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Allow deleting milestones from project overview",
+          "Allow deleting empty project group from empty state"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Redesign transfer detail sheet"
+        ]
+      },
+      {
+        "heading": "🐛 Bug Fixes",
+        "items": [
+          "Clean up transfer detail sheet controls and layout",
+          "Coerce decimal quantities and fix sheet layout"
+        ]
+      }
+    ],
+    "devStats": {
+      "commitCount": 7,
+      "prCount": 2,
+      "filesChanged": 11,
+      "additions": 658,
+      "deletions": 364,
+      "authors": [
+        "Kenneth Ben-Boulo",
+        "Victor Tetteh Ganoh Ahumah"
+      ],
+      "topCommits": [
+        {
+          "shortHash": "c511a268",
+          "hash": "c511a2687a9b4f19ab4ab8e8ae2ca41d8e799f53",
+          "message": "feat(projects): allow deleting milestones from project overview",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 2,
+          "additions": 54,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/c511a2687a9b4f19ab4ab8e8ae2ca41d8e799f53"
+        },
+        {
+          "shortHash": "49d53f7e",
+          "hash": "49d53f7e98095dbf47f0db9a0c15e545955b4ee9",
+          "message": "Merge pull request #325 from everythingtechnologies/feat/delete-empty-project-group",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 325,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/49d53f7e98095dbf47f0db9a0c15e545955b4ee9"
+        },
+        {
+          "shortHash": "f720bb12",
+          "hash": "f720bb123feb8090a251eb0844459d571011b4ea",
+          "message": "Merge pull request #324 from everythingtechnologies/fix/stock-transfer-sheets",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 324,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/f720bb123feb8090a251eb0844459d571011b4ea"
+        },
+        {
+          "shortHash": "1b69c68c",
+          "hash": "1b69c68ca4a67dc40b445e0321c7c219e331df70",
+          "message": "fix(inventory): clean up transfer detail sheet controls and layout",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 1,
+          "additions": 4,
+          "deletions": 8,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/1b69c68ca4a67dc40b445e0321c7c219e331df70"
+        },
+        {
+          "shortHash": "4e51572e",
+          "hash": "4e51572e1288a727ea3c4c502ac75df9417c3d4a",
+          "message": "refactor(inventory): redesign transfer detail sheet",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 1,
+          "additions": 404,
+          "deletions": 299,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/4e51572e1288a727ea3c4c502ac75df9417c3d4a"
+        },
+        {
+          "shortHash": "0cd89e3f",
+          "hash": "0cd89e3f329fb88f7d0742f4482029b64bf64c61",
+          "message": "feat(projects): allow deleting empty project group from empty state",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 3,
+          "additions": 114,
+          "deletions": 28,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/0cd89e3f329fb88f7d0742f4482029b64bf64c61"
+        },
+        {
+          "shortHash": "16ae36d7",
+          "hash": "16ae36d749b71da5acce41e2755d05575e3056bd",
+          "message": "fix(inventory): coerce decimal quantities and fix sheet layout",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 4,
+          "additions": 82,
+          "deletions": 29,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/16ae36d749b71da5acce41e2755d05575e3056bd"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rel-2026-09-24",
+    "title": "Update delivery note editing logic and descriptions",
+    "description": "Shipped 11 updates across Inventory Management, consignment, transaction-listing, with stability and workflow enhancements.",
+    "date": "2026-09-24",
+    "tags": [
+      "Features",
+      "Improvements"
+    ],
+    "highlights": [
+      "Update delivery note editing logic and descriptions",
+      "Add consignment inventory feature",
+      "Add comprehensive API guide for consignment inventory integration"
+    ],
+    "sections": [
+      {
+        "heading": "✨ New Features",
+        "items": [
+          "Update delivery note editing logic and descriptions",
+          "Add consignment inventory feature",
+          "Add comprehensive API guide for consignment inventory integration",
+          "Enhance inline editing experience and team workload management"
+        ]
+      },
+      {
+        "heading": "⚡ Improvements",
+        "items": [
+          "Remove unnecessary overflow-x-hidden classes from layout components",
+          "Remove consignment agreements and settlements pages, update navigation and proxy restrictions",
+          "Remove unused transaction quick actions and summary components"
+        ]
+      }
+    ],
+    "devStats": {
+      "commitCount": 11,
+      "prCount": 4,
+      "filesChanged": 129,
+      "additions": 12745,
+      "deletions": 7219,
+      "authors": [
+        "Victor Tetteh-Ganoh Ahumah",
+        "Victor Tetteh Ganoh Ahumah",
+        "Kenneth Ben-Boulo"
+      ],
+      "topCommits": [
+        {
+          "shortHash": "1b57eb5d",
+          "hash": "1b57eb5d74ea76f8bfb9d32f848f6339feefc968",
+          "message": "refactor(inventory): remove unnecessary overflow-x-hidden classes from layout components",
+          "author": "Victor Tetteh-Ganoh Ahumah",
+          "filesChanged": 18,
+          "additions": 42,
+          "deletions": 64,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/1b57eb5d74ea76f8bfb9d32f848f6339feefc968"
+        },
+        {
+          "shortHash": "2aea19fa",
+          "hash": "2aea19fa1b0c645f81271fd6170777f8120acc54",
+          "message": "Merge pull request #323 from everythingtechnologies/hotfix/journal-toolbar",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 323,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/2aea19fa1b0c645f81271fd6170777f8120acc54"
+        },
+        {
+          "shortHash": "26a7a45b",
+          "hash": "26a7a45bbcf054f927604b8466271ad6f7c0753d",
+          "message": "refactor(consignment): remove consignment agreements and settlements pages, update navigation and proxy restrictions",
+          "author": "Victor Tetteh-Ganoh Ahumah",
+          "filesChanged": 6,
+          "additions": 25,
+          "deletions": 88,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/26a7a45bbcf054f927604b8466271ad6f7c0753d"
+        },
+        {
+          "shortHash": "2cedbc08",
+          "hash": "2cedbc082043d22b6a83c8197ae2606732ed933d",
+          "message": "refactor(transaction-listing): remove unused transaction quick actions and summary components",
+          "author": "Victor Tetteh-Ganoh Ahumah",
+          "filesChanged": 1,
+          "additions": 0,
+          "deletions": 34,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/2cedbc082043d22b6a83c8197ae2606732ed933d"
+        },
+        {
+          "shortHash": "c9ff88d5",
+          "hash": "c9ff88d539c72cfa360e944b581b7cb01b31588f",
+          "message": "Merge pull request #321 from everythingtechnologies/chore/delivery-note",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 321,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/c9ff88d539c72cfa360e944b581b7cb01b31588f"
+        },
+        {
+          "shortHash": "fce9d194",
+          "hash": "fce9d194c607888b97584a099678d80418dd15ee",
+          "message": "Merge pull request #320 from everythingtechnologies/feat/inventory-consignment",
+          "author": "Victor Tetteh Ganoh Ahumah",
+          "prNumber": 320,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/fce9d194c607888b97584a099678d80418dd15ee"
+        },
+        {
+          "shortHash": "7287e8a2",
+          "hash": "7287e8a275ed3d7e5f443e92e6f2ef09d03008ed",
+          "message": "feat(delivery-notes): update delivery note editing logic and descriptions",
+          "author": "Victor Tetteh-Ganoh Ahumah",
+          "filesChanged": 3,
+          "additions": 6,
+          "deletions": 7,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/7287e8a275ed3d7e5f443e92e6f2ef09d03008ed"
+        },
+        {
+          "shortHash": "5bc83f1b",
+          "hash": "5bc83f1b434762ef5a80ec01f69cc214fe311aa4",
+          "message": "feat(consignment): add consignment inventory feature",
+          "author": "Victor Tetteh-Ganoh Ahumah",
+          "filesChanged": 42,
+          "additions": 4619,
+          "deletions": 41,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/5bc83f1b434762ef5a80ec01f69cc214fe311aa4"
+        },
+        {
+          "shortHash": "ac851a2f",
+          "hash": "ac851a2f5b6aa72e4d691a53d81f62d3cd05e8df",
+          "message": "feat(consignment): add comprehensive API guide for consignment inventory integration",
+          "author": "Victor Tetteh-Ganoh Ahumah",
+          "filesChanged": 3,
+          "additions": 403,
+          "deletions": 240,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/ac851a2f5b6aa72e4d691a53d81f62d3cd05e8df"
+        },
+        {
+          "shortHash": "0f877e81",
+          "hash": "0f877e81c0522c4a1f73af495bb1e90a7006c934",
+          "message": "Merge pull request #319 from everythingtechnologies/t3code/revamp-projects-page",
+          "author": "Kenneth Ben-Boulo",
+          "prNumber": 319,
+          "filesChanged": 0,
+          "additions": 0,
+          "deletions": 0,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/0f877e81c0522c4a1f73af495bb1e90a7006c934"
+        },
+        {
+          "shortHash": "9faec7f7",
+          "hash": "9faec7f78732f5e71ed4ac2a59b9e55526eb0ca5",
+          "message": "feat: enhance inline editing experience and team workload management",
+          "author": "Kenneth Ben-Boulo",
+          "filesChanged": 56,
+          "additions": 7650,
+          "deletions": 6745,
+          "commitUrl": "https://github.com/everythingtechnologies/workbook-dashboard/commit/9faec7f78732f5e71ed4ac2a59b9e55526eb0ca5"
+        }
+      ]
+    }
+  },
+  {
     "id": "rel-2026-09-22",
     "title": "Add supplier filter to bills and fix customer filter",
     "description": "Shipped 8 updates across Analytics & Reporting, Invoice Management, with stability and workflow enhancements.",
